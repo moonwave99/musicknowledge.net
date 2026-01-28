@@ -41,6 +41,7 @@ await render({
           priority: 0.8,
         },
         url,
+        language: "en",
         ...json,
         ...page,
       };
