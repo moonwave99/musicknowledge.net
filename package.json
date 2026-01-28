@@ -1,0 +1,15 @@
+{
+  "name": "music-lessons",
+  "author": {
+    "name": "Diego Caponera",
+    "email": "diego.caponera@gmail.com",
+    "url": "https://github.com/moonwave99"
+  },
+  "version": "0.0.1",
+  "description": "Music lessons homepage",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "license": "ISC",
+  "type": "module"
+}
