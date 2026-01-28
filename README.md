@@ -1,3 +1,3 @@
-# Music Lessons
+# Musicknowledge.net
 
 WIP

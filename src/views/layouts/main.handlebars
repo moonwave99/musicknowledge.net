@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{labels.common.baseTitle}} | {{title}}</title>
+  <link rel="stylesheet" href="~/src/style.css" />
+  <link rel="sitemap" type="application/xml" href="{{ getUrl '/sitemap.xml' }}">
+  {{>meta}}
+</head>
+
+<body class="page-{{id}}">
+  {{>nav}}
+  {{#if isHomepage}}
+  {{>hero}}
+  {{/if}}
+  <main>
+    {{{body}}}
+  </main>
+  {{>footer}}
+  <script type="module" src="~/src/index.js"></script>
+</body>
+
+</html>

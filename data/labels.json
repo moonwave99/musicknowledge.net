@@ -1,0 +1,12 @@
+{
+  "common": {
+    "baseTitle": "Music Knowledge",
+    "nav": {
+      "home": "Home"
+    }
+  },
+  "author": {
+    "name": "Diego Caponera",
+    "homepage": "https://diegocaponera.com"
+  }
+}
