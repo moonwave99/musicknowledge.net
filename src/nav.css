@@ -24,9 +24,6 @@
     &:hover {
       text-decoration: underline;
     }
-    &.current {
-      font-weight: bold;
-    }
   }
 
   ul {
@@ -38,6 +35,13 @@
     &.sections {
       gap: 2rem;
       margin-right: auto;
+    }
+    .active a {
+      font-weight: bold;
+      color: var(--accent-color);
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -59,11 +63,13 @@
       width: 100%;
       text-align: center;
       gap: 1.5rem;
+
       li {
         width: 100%;
         a {
           width: 100%;
           display: block;
+          font-size: 2rem;
         }
       }
     }

@@ -90,7 +90,7 @@
     }
     h1 {
       gap: 0.5rem;
-      font-size: 1.75rem;
+      font-size: 1.6rem;
       line-height: 3.5rem;
       margin-top: auto;
       span {
@@ -100,10 +100,22 @@
     }
     .hero-bg {
       background-position: center;
+      .attribution {
+        top: 1.25rem;
+        left: 1rem;
+        bottom: auto;
+        right: auto;
+        color: var(--color-light);
+        background-color: transparent;
+      }
     }
     .actions {
       margin-top: auto;
       flex-direction: column;
+      .action {
+        background-color: var(--accent-color);
+        color: var(--color-dark);
+      }
     }
   }
 }

@@ -16,6 +16,8 @@ const helpers = {
   translate,
   getUrl: (slug, context) =>
     [context.data.root.url, slug].join("/").replace(/index$/, ""),
+  getNavClass: (slug, context) =>
+    slug == context.data.root.slug ? "active" : "",
   formatDate: (date, language = defaultLanguage) =>
     new Date(date).toLocaleDateString(`${language}-${language.toUpperCase()}`, {
       day: "numeric",
