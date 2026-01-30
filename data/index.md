@@ -1,5 +1,6 @@
 ---
 title: Welcome
+isHome: true
 ---
 
 ## About the author

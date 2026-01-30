@@ -10,6 +10,8 @@ const url =
     ? "http://localhost:1234"
     : process.env.URL || pkg.homepage;
 
+const thisYear = new Date().getFullYear();
+
 const helpers = {
   translate,
   getUrl: (slug, context) =>
@@ -41,7 +43,9 @@ await render({
           priority: 0.8,
         },
         url,
+        id: page.slug,
         language: "en",
+        thisYear,
         ...json,
         ...page,
       };

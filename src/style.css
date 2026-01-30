@@ -43,6 +43,12 @@ main {
   min-height: 90vh;
 }
 
+body:not(.page-index) {
+  main {
+    padding-top: var(--navbar-height);
+  }
+}
+
 .navToggler {
   display: none;
 }
@@ -56,6 +62,17 @@ main {
 .page-light {
   .nav {
     color: var(--color-dark);
+  }
+}
+
+.page-index {
+  .nav {
+    opacity: 0;
+    background-color: transparent;
+    &.scrolled {
+      opacity: 1;
+      background-color: var(--background-color-dark);
+    }
   }
 }
 
