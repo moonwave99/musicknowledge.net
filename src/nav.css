@@ -11,9 +11,7 @@
   z-index: 1;
   padding: 0 2rem;
   letter-spacing: 0.02rem;
-  transition:
-    transform 0.2s ease-in-out,
-    background 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   background-color: var(--background-color-dark);
   z-index: 10;
 
