@@ -1,8 +1,24 @@
 {
+  "links": {
+    "course": "Start Online Course",
+    "lessons": "Book Private Lessons"
+  },
   "common": {
     "baseTitle": "Music Knowledge",
     "nav": {
-      "home": "Home"
+      "home": "Home",
+      "about": "About",
+      "faq": "FAQ",
+      "course": "Course",
+      "lessons": "Private Lessons"
+    },
+    "hero": {
+      "cover": {
+        "attribution": {
+          "text": "&copy; Brett Sayles",
+          "link": "https://www.pexels.com/@brett-sayles/"
+        }
+      }
     }
   },
   "author": {

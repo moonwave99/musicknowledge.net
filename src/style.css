@@ -3,7 +3,7 @@
 @import url("./hero.css");
 
 :root {
-  --background-color: #f0a944;
+  --accent-color: #f0a944;
   --background-color-dark: #221f20;
 
   --color-dark: rgb(25, 25, 25);
@@ -39,6 +39,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  min-height: 90vh;
+}
+
 .navToggler {
   display: none;
 }
@@ -65,9 +69,6 @@ body {
     &:not(.page-homepage) {
       main {
         padding-top: 0;
-      }
-      .navToggler {
-        filter: var(--filter-light);
       }
     }
     .navToggler {
@@ -96,7 +97,6 @@ body {
       }
       .navToggler {
         background-image: url("./assets/icons/close.svg");
-        filter: var(--filter-light) !important;
       }
     }
   }
@@ -127,4 +127,21 @@ a {
       gap: 1rem;
     }
   }
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 3.5rem;
+  padding: 0 1.5rem;
+  border-radius: 0.5rem;
+  background-color: color-mix(in srgb, var(--accent-color), black 15%);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s ease-in-out;
+  &:hover {
+    background-color: color-mix(in srgb, var(--accent-color), white 10%);
+  }
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
