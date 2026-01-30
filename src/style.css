@@ -121,6 +121,14 @@ a {
   color: var(--color-dark);
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: Futura, sans-serif;
+  letter-spacing: -0.025rem;
+}
+
 .footer {
   padding: 2rem;
   display: flex;
@@ -134,10 +142,6 @@ a {
 }
 
 .section {
-  &:nth-of-type(odd) {
-    background-color: var(--background-color-dark);
-    color: var(--color-light);
-  }
   .container {
     .content {
       padding: 3rem 1rem;
@@ -165,4 +169,13 @@ a {
     background-color: color-mix(in srgb, var(--accent-color), white 10%);
   }
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.page-index {
+  .section {
+    &:nth-of-type(odd) {
+      background-color: var(--background-color-dark);
+      color: var(--color-light);
+    }
+  }
 }
