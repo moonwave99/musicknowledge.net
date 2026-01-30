@@ -134,12 +134,18 @@ a {
 }
 
 .section {
+  &:nth-of-type(odd) {
+    background-color: var(--background-color-dark);
+    color: var(--color-light);
+  }
   .container {
     .content {
-      padding: 2rem;
+      padding: 3rem 1rem;
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      max-width: min(1024px, 95vw);
+      margin: 0 auto;
     }
   }
 }

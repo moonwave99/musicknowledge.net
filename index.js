@@ -7,7 +7,7 @@ const { json, pages } = await load();
 
 const url =
   process.env.NODE_ENV === "dev"
-    ? "http://localhost:1234"
+    ? `http://localhost:${process.env.PORT || 1234}`
     : process.env.URL || pkg.homepage;
 
 const thisYear = new Date().getFullYear();

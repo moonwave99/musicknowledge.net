@@ -1,14 +1,19 @@
 ---
 title: Welcome
-isHome: true
 ---
 
-## About the author
+## About the Course
 
 WIP
 
 <!-- block -->
 
-## Get lessons
+## About the Author
+
+WIP
+
+<!-- block -->
+
+## Get Private Lessons
 
 WIP
