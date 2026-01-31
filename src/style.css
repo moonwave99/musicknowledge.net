@@ -1,5 +1,6 @@
 @import url("./nav.css");
 @import url("./hero.css");
+@import url("./course.css");
 
 :root {
   --accent-color: #ff9505;
@@ -140,6 +141,11 @@ h4,
       gap: 1rem;
       max-width: min(1024px, 95vw);
       margin: 0 auto;
+      .block {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
     }
   }
 }

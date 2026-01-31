@@ -13,6 +13,10 @@
       "lessons": "Private Lessons"
     },
     "hero": {
+      "title": [
+        "It's time to pick up",
+        "music <s>theory</s> <u>knowledge</u>."
+      ],
       "cover": {
         "attribution": {
           "text": "&copy; Brett Sayles",
@@ -20,6 +24,14 @@
         }
       }
     }
+  },
+  "course": {
+    "lessons": {
+      "title": "Lessons"
+    }
+  },
+  "footer": {
+    "top": "Back to top"
   },
   "author": {
     "name": "Diego Caponera",

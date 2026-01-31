@@ -17,13 +17,22 @@ const helpers = {
   getUrl: (slug, context) =>
     [context.data.root.url, slug].join("/").replace(/index$/, ""),
   getNavClass: (slug, context) =>
-    slug == context.data.root.slug ? "active" : "",
+    context.data.root.slug.startsWith(slug) ? "active" : "",
   formatDate: (date, language = defaultLanguage) =>
     new Date(date).toLocaleDateString(`${language}-${language.toUpperCase()}`, {
       day: "numeric",
       month: "short",
       year: "numeric",
     }),
+};
+
+const renderer = {
+  paragraph: (token) => {
+    if (token.startsWith("<figure")) {
+      return token;
+    }
+    return `<p>${token}</p>`;
+  },
 };
 
 function translate(key, language = "en") {
@@ -34,29 +43,35 @@ function translate(key, language = "en") {
   );
 }
 
+const lessons = pages
+  .filter((x) => x.slug.startsWith("course/"))
+  .toSorted((a, b) => (a.index > b.index ? 1 : -1));
+
 await render({
   buildPath: path.join(process.cwd(), "output"),
   domain: url,
   pages: [
-    ...pages.map((page) => {
-      return {
-        sitemap: {
-          changefreq: "monthly",
-          priority: 0.8,
-        },
-        url,
-        id: page.slug,
-        language: "en",
-        thisYear,
-        ...json,
-        ...page,
-      };
-    }),
+    ...pages.map((page) => ({
+      sitemap: {
+        changefreq: "monthly",
+        priority: 0.8,
+      },
+      url,
+      id: page.slug,
+      language: "en",
+      thisYear,
+      lessons,
+      ...json,
+      ...page,
+    })),
   ],
   sitemap: {
     generate: true,
   },
   handlebars: {
     helpers,
+  },
+  markdown: {
+    renderer,
   },
 });
