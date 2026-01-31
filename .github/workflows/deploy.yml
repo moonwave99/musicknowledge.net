@@ -7,6 +7,7 @@ on:
       - main
 
 env:
+  MODE: prod
   URL: https://moonwave99.github.io/musicknowledge.net
 
 jobs:
