@@ -27,11 +27,19 @@ function translate(labels) {
     `${language}.${key}`;
 }
 
+function isHomepage(context) {
+  if (context.data.root.slug !== "index") {
+    return;
+  }
+  return context.fn(this);
+}
+
 export function getHelpers({ labels }) {
   return {
     formatDate,
     getUrl,
     getNavClass,
+    isHomepage,
     translate: translate(labels),
   };
 }

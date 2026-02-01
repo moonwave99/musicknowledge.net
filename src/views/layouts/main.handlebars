@@ -5,11 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{labels.common.baseTitle}} | {{title}}</title>
+  {{#isHomepage}}
   <link
     fetchpriority="high"
     href="~/src/assets/hero.jpg?as=webp&width=800&quality=100"
     rel="preload" as="image"
     data-for=".hero"/>
+  {{/isHomepage}}
   <link rel="stylesheet" href="~/src/style.css" />
   <link rel="sitemap" type="application/xml" href="{{ getUrl 'sitemap.xml' }}">
   {{>meta}}
