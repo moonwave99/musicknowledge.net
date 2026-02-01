@@ -1,3 +1,15 @@
 .course-list {
   list-style: none;
 }
+
+.section.lesson {
+  .container {
+    .content {
+      gap: 2rem;
+      max-width: min(var(--copy-text-width), 95vw);
+      p {
+        line-height: 1.616;
+      }
+    }
+  }
+}

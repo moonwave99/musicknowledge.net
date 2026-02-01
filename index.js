@@ -1,6 +1,7 @@
 import path from "node:path";
 import _ from "lodash";
 import { load, render } from "@moonwave99/goffre";
+import { getHelpers } from "./helpers.js";
 import pkg from "./package.json" with { type: "json" };
 
 const { json, pages } = await load();
@@ -10,22 +11,6 @@ const url =
     ? `http://localhost:${process.env.PORT || 1234}`
     : process.env.URL || pkg.homepage;
 
-const thisYear = new Date().getFullYear();
-
-const helpers = {
-  translate,
-  getUrl: (slug, context) =>
-    [context.data.root.url, slug].join("/").replace(/index$/, ""),
-  getNavClass: (slug, context) =>
-    context.data.root.slug.startsWith(slug) ? "active" : "",
-  formatDate: (date, language = defaultLanguage) =>
-    new Date(date).toLocaleDateString(`${language}-${language.toUpperCase()}`, {
-      day: "numeric",
-      month: "short",
-      year: "numeric",
-    }),
-};
-
 const renderer = {
   paragraph: (token) => {
     if (token.startsWith("<figure")) {
@@ -34,14 +19,6 @@ const renderer = {
     return `<p>${token}</p>`;
   },
 };
-
-function translate(key, language = "en") {
-  return (
-    _.get(json.labels, `${language}.${key}`) ||
-    _.get(json.labels, `common.${key}`) ||
-    `${language}.${key}`
-  );
-}
 
 const lessons = pages
   .filter((x) => x.slug.startsWith("course/"))
@@ -59,7 +36,7 @@ await render({
       url,
       id: page.slug,
       language: "en",
-      thisYear,
+      thisYear: new Date().getFullYear(),
       lessons,
       ...json,
       ...page,
@@ -69,7 +46,7 @@ await render({
     generate: true,
   },
   handlebars: {
-    helpers,
+    helpers: getHelpers(json),
   },
   markdown: {
     renderer,
