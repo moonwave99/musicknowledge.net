@@ -134,10 +134,14 @@ h4,
   font-size: 0.9rem;
   background-color: var(--background-color-dark);
   color: var(--color-light);
+  @media screen and (max-width: 820px) {
+    padding: 2rem 1rem;
+  }
   p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    line-height: 1.616;
     &.license {
       display: block;
       color: rgba(255, 255, 255, 0.5);
