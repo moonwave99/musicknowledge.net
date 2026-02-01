@@ -6,6 +6,9 @@
         <p>
           <time datetime="{{formatDate date=date format="timestamp"}}">{{ formatDate date=date format="short" }}</time>
         </p>
+        {{#cover}}
+          {{> course/cover }}
+        {{/cover}}
       </header>
       {{{ content }}}
     </div>
