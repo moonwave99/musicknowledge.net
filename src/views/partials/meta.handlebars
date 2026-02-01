@@ -1,6 +1,10 @@
-<meta name="description" content="{{ translate 'description' language }}" />
-<meta property="og:site_name" content="{{labels.common.baseTitle}} | {{ translate 'subtitle' language }}" />
+<meta name="description" content="{{ description }}" />
+<meta property="og:site_name" content="{{labels.common.baseTitle}} | {{ labels.common.subtitle }}" />
 <meta property="og:url" content="{{getUrl slug}}" />
 <meta property="og:title" content="{{labels.common.baseTitle}} | {{title}}" />
-<meta property="og:image" content="{{socialMediaCover}}" />
+{{#if cover}}
+<meta property="og:image" content="{{cover}}" />
+{{else}}
+<meta property="og:image" content="{{ url }}/cover.jpg" />
+{{/if}}
 <meta property="og:description" content="{{ description }}" />
