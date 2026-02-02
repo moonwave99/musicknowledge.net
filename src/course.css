@@ -7,10 +7,12 @@
   --title-font-size: 3rem;
   .container {
     .content {
+      gap: 3.5rem;
+      max-width: min(var(--copy-text-width), 90vw);
       header {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
         h1 {
           font-size: var(--title-font-size);
           line-height: 1;
@@ -24,29 +26,33 @@
             aspect-ratio: 16/9;
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
             &.loaded {
               opacity: 1;
             }
           }
         }
       }
-      gap: 2rem;
-      max-width: min(var(--copy-text-width), 90vw);
 
-      h2 {
-        font-size: 2rem;
-      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        h2 {
+          font-size: 2rem;
+        }
 
-      p,
-      ul,
-      ol {
-        line-height: 1.616;
-        font-size: 1.2rem;
-      }
+        p,
+        ul,
+        ol {
+          line-height: 1.616;
+          font-size: 1.2rem;
+        }
 
-      ul,
-      ol {
-        padding-left: 1.2rem;
+        ul,
+        ol {
+          padding-left: 1.2rem;
+        }
       }
     }
     footer {

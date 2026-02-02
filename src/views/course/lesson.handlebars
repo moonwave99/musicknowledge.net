@@ -10,7 +10,9 @@
           {{> course/cover }}
         {{/cover}}
       </header>
-      {{{ content }}}
+      <div class="text">
+        {{{ content }}}
+      </div>
       <footer>
         {{#prevItem . list=lessons }}
           {{> course/lesson-card prev=true }}
