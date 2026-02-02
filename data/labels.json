@@ -1,34 +1,24 @@
 {
-  "links": {
-    "course": "Start Online Course",
-    "lessons": "Book Private Lessons"
+  "baseTitle": "Music Knowledge",
+  "subtitle": "Start learning music theory today",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "faq": "FAQ",
+    "course": "Course",
+    "lessons": "Private Lessons"
   },
-  "common": {
-    "baseTitle": "Music Knowledge",
-    "subtitle": "Start learning music theory today",
-    "nav": {
-      "home": "Home",
-      "about": "About",
-      "faq": "FAQ",
-      "course": "Course",
-      "lessons": "Private Lessons"
+  "hero": {
+    "title": ["It's time to pick up", "music <s>theory</s> <u>knowledge</u>."],
+    "links": {
+      "course": "Start Online Course",
+      "lessons": "Book Private Lessons"
     },
-    "hero": {
-      "title": [
-        "It's time to pick up",
-        "music <s>theory</s> <u>knowledge</u>."
-      ],
-      "cover": {
-        "attribution": {
-          "text": "&copy; Brett Sayles",
-          "link": "https://www.pexels.com/@brett-sayles/"
-        }
+    "cover": {
+      "attribution": {
+        "text": "&copy; Brett Sayles",
+        "link": "https://www.pexels.com/@brett-sayles/"
       }
-    }
-  },
-  "course": {
-    "lessons": {
-      "title": "Lessons"
     }
   },
   "footer": {
@@ -38,5 +28,14 @@
   "author": {
     "name": "Diego Caponera",
     "homepage": "https://diegocaponera.com"
+  },
+  "course": {
+    "lessons": {
+      "title": "Lessons",
+      "links": {
+        "prev": "Previous Lesson",
+        "next": "Next Lesson"
+      }
+    }
   }
 }

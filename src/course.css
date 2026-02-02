@@ -1,5 +1,6 @@
 .course-list {
   list-style: none;
+  line-height: 1.616;
 }
 
 .section.lesson {
@@ -19,18 +20,8 @@
           font-size: 0.9rem;
         }
         figure {
-          display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
           img {
-            width: 100%;
             aspect-ratio: 16/9;
-            background-color: var(--background-color);
-          }
-          figcaption {
-            font-style: italic;
-            text-align: right;
-            line-height: 1.616;
           }
         }
       }
@@ -51,6 +42,21 @@
       ul,
       ol {
         padding-left: 1.2rem;
+      }
+    }
+    footer {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      .lesson-link {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+        span {
+          font-weight: bold;
+          font-family: var(--heading);
+        }
       }
     }
   }

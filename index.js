@@ -1,6 +1,6 @@
 import path from "node:path";
-import _ from "lodash";
 import { load, render } from "@moonwave99/goffre";
+import { getRenderer } from "./renderer.js";
 import { getHelpers } from "./helpers.js";
 import pkg from "./package.json" with { type: "json" };
 
@@ -10,15 +10,6 @@ const url =
   process.env.NODE_ENV === "dev"
     ? `http://localhost:${process.env.PORT || 1234}`
     : process.env.URL || pkg.homepage;
-
-const renderer = {
-  paragraph: (token) => {
-    if (token.startsWith("<figure")) {
-      return token;
-    }
-    return `<p>${token}</p>`;
-  },
-};
 
 const lessons = pages
   .filter((x) => x.slug.startsWith("course/"))
@@ -49,6 +40,6 @@ await render({
     helpers: getHelpers(json),
   },
   markdown: {
-    renderer,
+    renderer: getRenderer(),
   },
 });

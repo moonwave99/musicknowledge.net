@@ -126,6 +126,20 @@ h4,
   font-weight: 700;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  img {
+    width: 100%;
+  }
+  figcaption {
+    font-style: italic;
+    text-align: right;
+    line-height: 1.616;
+  }
+}
+
 .footer {
   padding: 2rem;
   display: flex;

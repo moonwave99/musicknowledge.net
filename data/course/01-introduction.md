@@ -28,8 +28,6 @@ This course assumes no prior knowledge. The main areas that we will see together
 
 If piano is not your instrument of choice, a **digital keyboard** of sort would be of great help since the provided instrument diagrams are piano based, and music theory is much easy to apply and follow on such instrument. [Music staff paper][music-staff-paper] would be handy too, even though not strictly necessary.
 
-[music-staff-paper]: https://www.musicca.com/staff-paper
-
 ## Some little advice before starting
 
 Music is one of the most beautiful things that one can experience in life. It's beauty, freedom, love, care, shelter. Some people think that studying it takes some of the aforementioned away: nothing can be further from the truth! Learning it will make you a better musician especially in group context and will empower you.
@@ -40,4 +38,6 @@ Generations of musicians handed down conventions and knowledge with success over
 
 Embrace diversity like when you discover a new language, culture or cuisine: it will make the journey much more pleasant.
 
-Ready for the first lesson? There you go!
+Ready for the first lesson? Go ahead!
+
+[music-staff-paper]: https://www.musicca.com/staff-paper

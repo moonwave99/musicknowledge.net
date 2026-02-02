@@ -1,5 +1,3 @@
-import _ from "lodash";
-
 function formatDate({ hash }) {
   const { date, format } = hash;
   if (format == "timestamp") {
@@ -20,13 +18,6 @@ function getNavClass(slug, context) {
   return context.data.root.slug.startsWith(slug) ? "active" : "";
 }
 
-function translate(labels) {
-  return (key, language = "en") =>
-    _.get(labels, `${language}.${key}`) ||
-    _.get(labels, `common.${key}`) ||
-    `${language}.${key}`;
-}
-
 function isHomepage(context) {
   if (context.data.root.slug !== "index") {
     return;
@@ -34,12 +25,11 @@ function isHomepage(context) {
   return context.fn(this);
 }
 
-export function getHelpers({ labels }) {
+export function getHelpers() {
   return {
     formatDate,
     getUrl,
     getNavClass,
     isHomepage,
-    translate: translate(labels),
   };
 }
