@@ -6,8 +6,8 @@ slug: course/the-landscape-of-notes
 title: The Landscape of Notes
 date: 2026-02-01
 cover:
-  id: gustav-klimt-musik
-  caption: Gustav Klimt, Musik
+  id: kazimir-malevich-argentine-polka
+  caption: Kazimir Malevich, Argentine Polka
 ---
 
 WIP

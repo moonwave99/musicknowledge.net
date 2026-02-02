@@ -13,16 +13,10 @@
       {{{ content }}}
       <footer>
         {{#prevItem . list=lessons }}
-        <div class="lesson-link">
-          <span>{{ @root.labels.course.lessons.links.prev }}</span>
-          <a href="{{getLink .}}">{{title}}</a>
-        </div>
+          {{> course/lesson-card prev=true }}
         {{/prevItem }}
         {{#nextItem . list=lessons }}
-        <div class="lesson-link">
-          <span>{{ @root.labels.course.lessons.links.next }}</span>
-          <a href="{{getLink .}}">{{title}}</a>
-        </div>
+          {{> course/lesson-card }}
         {{/nextItem }}
       </footer>
     </div>
