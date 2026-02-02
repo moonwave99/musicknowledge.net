@@ -12,6 +12,13 @@
     rel="preload" as="image"
     data-for=".hero"/>
   {{/isHomepage}}
+  {{#cover}}
+  <link
+    fetchpriority="high"
+    href="~/src/assets/covers/{{id}}.jpg?as=webp&width=768"
+    rel="preload" as="image"
+    data-for=".cover" />
+  {{/cover}}
   <link rel="stylesheet" href="~/src/style.css" />
   <link rel="sitemap" type="application/xml" href="{{ getUrl 'sitemap.xml' }}">
   {{>meta}}
