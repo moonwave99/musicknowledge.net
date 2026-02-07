@@ -9,6 +9,7 @@ on:
 env:
   MODE: prod
   URL: https://moonwave99.github.io/musicknowledge.net
+  VERSION: ${{ github.sha }}
 
 jobs:
   build:
