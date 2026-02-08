@@ -1,4 +1,4 @@
-import abcjs from "abcjs";
+import { synth, renderAbc } from "abcjs";
 import "abcjs/abcjs-audio.css";
 import "@moonwave99/paino/src/styles/paino.css";
 import { Paino } from "@moonwave99/paino";
@@ -21,12 +21,10 @@ async function init() {
       el.appendChild(audio);
       el.appendChild(piano);
 
-      const visualObj = abcjs
-        .renderAbc(staff, data, {
-          responsive: "resize",
-          add_classes: true,
-        })
-        .at(0);
+      const visualObj = renderAbc(staff, data, {
+        responsive: "resize",
+        add_classes: true,
+      }).at(0);
 
       if (visualObj.getMeter()?.value[0].den === "1") {
         staff.querySelector(".abcjs-time-signature").style.display = "none";
@@ -49,7 +47,7 @@ async function init() {
         return {};
       }
 
-      if (!abcjs.synth.supportsAudio()) {
+      if (!synth.supportsAudio()) {
         audio.innerHTML =
           "<div class='audio-error'>Audio is not supported in this browser.</div>";
         return;
@@ -66,7 +64,7 @@ async function init() {
           );
         },
       });
-      const synthControl = new abcjs.synth.SynthController();
+      const synthControl = new synth.SynthController();
       synthControl.load(audio, cursorControl, {
         displayLoop: true,
         displayRestart: true,
@@ -74,7 +72,7 @@ async function init() {
         displayProgress: true,
         displayWarp: true,
       });
-      const midiBuffer = new abcjs.synth.CreateSynth();
+      const midiBuffer = new synth.CreateSynth();
       await midiBuffer.init({ visualObj });
       synthControl.setTune(visualObj, true);
 
