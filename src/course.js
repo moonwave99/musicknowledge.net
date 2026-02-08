@@ -1,83 +1,14 @@
 import { synth, renderAbc } from "abcjs";
-import "abcjs/abcjs-audio.css";
-import "@moonwave99/paino/src/styles/paino.css";
 import { Paino } from "@moonwave99/paino";
 import { midiToNoteName } from "@tonaljs/midi";
+import "abcjs/abcjs-audio.css";
+import "@moonwave99/paino/src/styles/paino.css";
 
 window.addEventListener("DOMContentLoaded", init);
 
 async function init() {
   const controls = await Promise.all(
-    [...document.querySelectorAll("[data-abc]")].map(async (el, index) => {
-      const data = el.querySelector("code").textContent.trim();
-      if (!data) {
-        return;
-      }
-
-      const staff = document.createElement("div");
-      const audio = document.createElement("div");
-      const piano = document.createElement("div");
-      el.appendChild(staff);
-      el.appendChild(audio);
-      el.appendChild(piano);
-
-      const visualObj = renderAbc(staff, data, {
-        responsive: "resize",
-        add_classes: true,
-      }).at(0);
-
-      if (visualObj.getMeter()?.value[0].den === "1") {
-        staff.querySelector(".abcjs-time-signature").style.display = "none";
-      }
-
-      let pianoController;
-      if (typeof el.dataset.hidepiano === "undefined") {
-        pianoController = new Paino({
-          el: piano,
-          octaves: 5,
-          startOctave: 2,
-        });
-        pianoController.render();
-      } else {
-        piano.remove();
-      }
-
-      if (typeof el.dataset.hideplayer !== "undefined") {
-        audio.remove();
-        return {};
-      }
-
-      if (!synth.supportsAudio()) {
-        audio.innerHTML =
-          "<div class='audio-error'>Audio is not supported in this browser.</div>";
-        return;
-      }
-
-      const cursorControl = new CursorControl({
-        index,
-        el: staff,
-        onNotesChange: (notes) => {
-          pianoController?.setNotes(
-            notes
-              .filter(({ cmd }) => cmd === "note")
-              .map(({ pitch }) => midiToNoteName(pitch)),
-          );
-        },
-      });
-      const synthControl = new synth.SynthController();
-      synthControl.load(audio, cursorControl, {
-        displayLoop: true,
-        displayRestart: true,
-        displayPlay: true,
-        displayProgress: true,
-        displayWarp: true,
-      });
-      const midiBuffer = new synth.CreateSynth();
-      await midiBuffer.init({ visualObj });
-      synthControl.setTune(visualObj, true);
-
-      return { synthControl, cursorControl };
-    }),
+    [...document.querySelectorAll("[data-abc]")].map(initABC),
   );
 
   controls.forEach(({ cursorControl }) => {
@@ -91,6 +22,81 @@ async function init() {
       });
     });
   });
+}
+
+async function initABC(el, index) {
+  const data = el.querySelector("code").textContent.trim();
+  if (!data) {
+    return;
+  }
+
+  const staff = document.createElement("div");
+  const audio = document.createElement("div");
+  const piano = document.createElement("div");
+  el.appendChild(staff);
+  el.appendChild(audio);
+  el.appendChild(piano);
+
+  const visualObj = renderAbc(staff, data, {
+    responsive: "resize",
+    add_classes: true,
+  }).at(0);
+
+  const hideMeter = visualObj.getMeter()?.value[0].den === "1";
+  const hidePiano = typeof el.dataset.hidepiano !== "undefined";
+  const hidePlayer = typeof el.dataset.hideplayer !== "undefined";
+
+  if (hideMeter) {
+    staff.querySelector(".abcjs-time-signature").style.display = "none";
+  }
+
+  let pianoController;
+  if (!hidePiano) {
+    pianoController = new Paino({
+      el: piano,
+      octaves: 5,
+      startOctave: 2,
+    });
+    pianoController.render();
+  } else {
+    piano.remove();
+  }
+
+  if (hidePlayer) {
+    audio.remove();
+    return {};
+  }
+
+  if (!synth.supportsAudio()) {
+    audio.innerHTML =
+      "<div class='audio-error'>Audio is not supported in this browser.</div>";
+    return;
+  }
+
+  const cursorControl = new CursorControl({
+    index,
+    el: staff,
+    onNotesChange: (notes) => {
+      pianoController?.setNotes(
+        notes
+          .filter(({ cmd }) => cmd === "note")
+          .map(({ pitch }) => midiToNoteName(pitch)),
+      );
+    },
+  });
+  const synthControl = new synth.SynthController();
+  synthControl.load(audio, cursorControl, {
+    displayLoop: true,
+    displayRestart: true,
+    displayPlay: true,
+    displayProgress: true,
+    displayWarp: true,
+  });
+  const midiBuffer = new synth.CreateSynth();
+  await midiBuffer.init({ visualObj });
+  synthControl.setTune(visualObj, true);
+
+  return { synthControl, cursorControl };
 }
 
 class CursorControl {
