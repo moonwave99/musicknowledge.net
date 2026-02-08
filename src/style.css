@@ -1,7 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
 @import url("./nav.css");
 @import url("./hero.css");
 @import url("./course.css");
+
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/jost-v20-latin-700.woff2") format("woff2");
+}
 
 :root {
   --accent-color: #ff9505;
