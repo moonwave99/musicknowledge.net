@@ -35,6 +35,9 @@
   </main>
   {{>footer}}
   <script type="module" src="~/src/index.js"></script>
+  {{#isCourse}}
+  <script type="module" src="~/src/course.js"></script>
+  {{/isCourse}}
 </body>
 
 </html>

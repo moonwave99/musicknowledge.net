@@ -31,6 +31,12 @@
     "@parcel/transformer-xml": "^2.16.3",
     "parcel": "^2.16.3",
     "parcel-reporter-static-files-copy": "^1.5.3",
+    "parcel-resolver-ignore": "^2.2.1",
     "sharp": "^0.33.5"
+  },
+  "dependencies": {
+    "@moonwave99/paino": "^0.1.15",
+    "@tonaljs/midi": "^4.10.2",
+    "abcjs": "^6.6.1"
   }
 }

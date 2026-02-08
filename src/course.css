@@ -35,10 +35,17 @@
       }
 
       .text {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+        > * {
+          margin-bottom: 2rem;
+        }
+
+        p + ul,
+        p + ol {
+          margin-top: -1rem;
+        }
+
         h2 {
+          margin-top: 4rem;
           font-size: 2rem;
         }
 
@@ -46,12 +53,25 @@
         ul,
         ol {
           line-height: 1.616;
-          font-size: 1.2rem;
+          font-size: 1.1rem;
         }
 
         ul,
         ol {
           padding-left: 1.2rem;
+        }
+
+        .text-note {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          padding: 1rem;
+          background-color: color-mix(in srgb, var(--accent-color), white 50%);
+          border-radius: 0.5rem;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          p {
+            font-size: 1rem;
+          }
         }
       }
     }
@@ -83,5 +103,28 @@
   }
   @media screen and (max-width: 820px) {
     --title-font-size: 2rem;
+  }
+}
+
+[data-abc] {
+  --paino-white-key-highlight-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: color-mix(in srgb, var(--accent-color), white 90%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  code {
+    display: none;
+  }
+  .highlight {
+    fill: var(--accent-color);
+  }
+  .abcjs-cursor {
+    stroke: var(--accent-color);
+  }
+  .paino {
+    align-self: center;
   }
 }

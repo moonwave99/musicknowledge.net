@@ -25,11 +25,19 @@ function isHomepage(context) {
   return context.fn(this);
 }
 
+function isCourse(context) {
+  if (!context.data.root.slug.startsWith("course")) {
+    return;
+  }
+  return context.fn(this);
+}
+
 export function getHelpers() {
   return {
     formatDate,
     getUrl,
     getNavClass,
     isHomepage,
+    isCourse,
   };
 }
