@@ -106,15 +106,28 @@
   }
 }
 
-[data-abc] {
+[data-abc],
+[data-piano] {
   --paino-white-key-highlight-color: var(--accent-color);
+  --paino-black-key-highlight-color: var(--accent-color);
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: color-mix(in srgb, var(--accent-color), white 90%);
-  padding: 1rem;
+
   border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  &[data-abc] {
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: color-mix(in srgb, var(--accent-color), white 90%);
+  }
+
+  .paino .key.color-white.key-on.two,
+  .paino .key.color-black.key-on.two {
+    background-color: var(--accent-color-secondary);
+  }
+
   code {
     display: none;
   }
@@ -126,5 +139,8 @@
   }
   .paino {
     align-self: center;
+  }
+  .pianoWrapper {
+    overflow-x: auto;
   }
 }

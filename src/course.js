@@ -7,6 +7,8 @@ import "@moonwave99/paino/src/styles/paino.css";
 window.addEventListener("DOMContentLoaded", init);
 
 async function init() {
+  document.querySelectorAll("[data-piano]").forEach((el) => initPiano(el));
+
   const controls = await Promise.all(
     [...document.querySelectorAll("[data-abc]")].map(initABC),
   );
@@ -24,6 +26,48 @@ async function init() {
   });
 }
 
+function parsePianoData(data) {
+  return data.split("\n").reduce(
+    (memo, line) => {
+      const match = line.match(/\w+:/);
+      if (match) {
+        const [key, notes] = line.split(":");
+        return {
+          ...memo,
+          [key]: notes.trim().split(" "),
+        };
+      } else {
+        return {
+          ...memo,
+          notes: line.trim().split(" "),
+        };
+      }
+    },
+    { notes: [] },
+  );
+}
+
+function initPiano(el) {
+  const data = el.querySelector("code").textContent.trim();
+  if (!data) {
+    return;
+  }
+
+  const piano = document.createElement("div");
+  const pianoWrapper = document.createElement("div");
+  pianoWrapper.appendChild(piano);
+  pianoWrapper.classList.add("pianoWrapper");
+  el.appendChild(pianoWrapper);
+
+  const pianoController = new Paino({
+    el: piano,
+    octaves: 5,
+    startOctave: 2,
+  });
+  pianoController.render();
+  pianoController.setNotes(parsePianoData(data));
+}
+
 async function initABC(el, index) {
   const data = el.querySelector("code").textContent.trim();
   if (!data) {
@@ -32,10 +76,14 @@ async function initABC(el, index) {
 
   const staff = document.createElement("div");
   const audio = document.createElement("div");
+  const pianoWrapper = document.createElement("div");
   const piano = document.createElement("div");
+
   el.appendChild(staff);
   el.appendChild(audio);
-  el.appendChild(piano);
+  el.appendChild(pianoWrapper);
+  pianoWrapper.appendChild(piano);
+  pianoWrapper.classList.add("pianoWrapper");
 
   const visualObj = renderAbc(staff, data, {
     responsive: "resize",

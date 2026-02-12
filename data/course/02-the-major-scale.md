@@ -76,6 +76,15 @@ Every note on the piano sounds different from each other, otherwise they wouldn'
 - **three white keys** enclosing **two black keys**;
 - **four white keys** enclosing **three black keys**.
 
+Graphically we have:
+
+```piano
+one: C3 D3 E3 C4 D4 E4 C5 D5 E5
+two: F3 G3 A3 B3 F4 G4 A4 B4 F5 G5 A5 B5
+```
+
+This is a very convenient way to navigate the keyboard, both visually and tactfully.
+
 Listen to the following two sequences:
 
 ```abc
@@ -85,7 +94,7 @@ L:1
 CDEFGABc | z | cdefgabc'
 ```
 
-They are not technically the same notes because they are played in different locations, but they sound very similar. That's because we are playing the same thing - the C major scale - **in different octaves**. Different keys, but same pattern.
+They are not technically the same notes because they are played in different locations, but they sound _extremely similar_. That's because we are playing the same thing - the C major scale - **in different octaves**. Different keys, but same pattern.
 
 This is one of the pillars of music.
 
@@ -108,6 +117,6 @@ It's observation time:
 - they are labeled **in alphabetical order**...
 - ...but after the fifth one - the **G** - it comes the **A** (and not the H!)
 
-This is because a scale is made of **seven notes**. We'll soon see that a scale can start from every note of the piano (or of any other instrument of course), and that it must contain
+This is because the major scale is made of **seven notes**.
 
 [johnny-cash]: https://www.youtube.com/watch?v=5AtvXdmPe3A

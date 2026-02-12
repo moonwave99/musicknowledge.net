@@ -14,7 +14,7 @@ function image(href, _, text) {
 
 function code(content, language) {
   const tokens = language.split(" ");
-  if (tokens.includes("abc")) {
+  if (tokens.includes("abc") || tokens.includes("piano")) {
     return `<div ${tokens.map((x) => `data-${x}`).join(" ")}>
       <code>
 ${content}

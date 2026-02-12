@@ -26,7 +26,7 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "@moonwave99/goffre": "^0.0.5",
+    "@moonwave99/goffre": "^0.0.7",
     "@parcel/packager-xml": "^2.16.3",
     "@parcel/transformer-xml": "^2.16.3",
     "parcel": "^2.16.3",
@@ -37,6 +37,8 @@
   "dependencies": {
     "@moonwave99/paino": "^0.1.15",
     "@tonaljs/midi": "^4.10.2",
-    "abcjs": "^6.6.1"
+    "abcjs": "^6.6.1",
+    "ci": "^2.3.0",
+    "marked-footnote": "^1.4.0"
   }
 }
