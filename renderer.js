@@ -1,23 +1,16 @@
-function paragraph(token) {
-  if (token.startsWith("<figure")) {
-    return token;
-  }
-  return `<p>${token}</p>`;
-}
-
-function image(href, _, text) {
+function image({ text, href }) {
   return `<figure>
       <img loading="lazy" src="${href}" alt="${text}"/>
       <figcaption>${text}</figcaption>
     </figure>`;
 }
 
-function code(content, language) {
-  const tokens = language.split(" ");
+function code({ lang, text }) {
+  const tokens = lang.split(" ");
   if (tokens.includes("abc") || tokens.includes("piano")) {
     return `<div ${tokens.map((x) => `data-${x}`).join(" ")}>
       <code>
-${content}
+${text}
       </code>
     </div>`;
   }
@@ -26,7 +19,6 @@ ${content}
 
 export function getRenderer() {
   return {
-    paragraph,
     image,
     code,
   };
