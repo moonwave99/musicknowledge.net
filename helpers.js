@@ -1,3 +1,5 @@
+import { getLink } from "@moonwave99/goffre";
+
 function formatDate({ hash }) {
   const { date, format } = hash;
   if (format == "timestamp") {
@@ -11,7 +13,7 @@ function formatDate({ hash }) {
 }
 
 function getUrl(slug, context) {
-  return [context.data.root.url, slug].join("/").replace(/index$/, "");
+  return getLink({ slug }, context);
 }
 
 function getNavClass(slug, context) {
