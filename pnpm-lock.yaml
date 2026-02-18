@@ -25,8 +25,8 @@ importers:
         version: 1.4.0(marked@17.0.3)
     devDependencies:
       '@moonwave99/goffre':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.1.2
+        version: 0.1.2
       '@parcel/config-default':
         specifier: ^2.16.4
         version: 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.18))(@swc/helpers@0.5.18)
@@ -217,8 +217,8 @@ packages:
     resolution: {integrity: sha512-iA7+tyVqfrATAIsIRWQG+a7ZLLD0VaOCKV2Wd/v4mqIU3J9c4jx9p7S0nw1XH3gJCKNBOOwACOPYYSUu9pgT+w==}
     engines: {node: '>=12.0.0'}
 
-  '@moonwave99/goffre@0.1.0':
-    resolution: {integrity: sha512-eB8hqYG8O866ya3Tjaq4tQnCOtZ9yr68C+4HH5lZrEWGqa4YX8SPv9rO3+TQQ7FbrkbmW4frUwpMw/TctKIChQ==}
+  '@moonwave99/goffre@0.1.2':
+    resolution: {integrity: sha512-wepWuXq/5pmX5Rm2DQHIwGrzrvPQuJ9ERe+WpBnTIsK3mW4ROrLGZ/eK+6jofZYjxl7pFJSjZoBfYD29uV59JA==}
 
   '@moonwave99/paino@0.1.15':
     resolution: {integrity: sha512-FqatF5x4U/IhuweyMpdafqDrA/COiNu/3egPdr+GMT29k2BHKwmLJgayXM+RKw+JTbZu/l16UfOMOU1zyaNX9A==}
@@ -1808,7 +1808,7 @@ snapshots:
       '@lezer/lr': 1.4.8
       json5: 2.2.3
 
-  '@moonwave99/goffre@0.1.0':
+  '@moonwave99/goffre@0.1.2':
     dependencies:
       chalk: 4.1.2
       express: 4.22.1

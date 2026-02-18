@@ -1,4 +1,4 @@
-import { getLink } from "@moonwave99/goffre";
+import { helpers } from "@moonwave99/goffre";
 
 function formatDate({ hash }) {
   const { date, format } = hash;
@@ -13,7 +13,7 @@ function formatDate({ hash }) {
 }
 
 function getUrl(slug, context) {
-  return getLink({ slug }, context);
+  return helpers.getLink({ slug }, context);
 }
 
 function getNavClass(slug, context) {

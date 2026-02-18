@@ -31,6 +31,7 @@ await render({
       thisYear: new Date().getFullYear(),
       version: process.env.VERSION,
       lessons,
+      sitemapUrl: `${url}/sitemap.xml`,
       ...json,
       ...page,
     })),
