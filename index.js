@@ -28,7 +28,6 @@ await render({
       url,
       id: page.slug,
       language: "en",
-      thisYear: new Date().getFullYear(),
       version: process.env.VERSION,
       lessons,
       ...json,
