@@ -1,0 +1,9 @@
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  lmdb: true
+  msgpackr-extract: true
+  sharp: true
+minimumReleaseAgeExclude:
+  - '@music-ui/abc@0.8.0 || 0.9.0'
+  - '@music-ui/piano@0.8.0 || 0.9.0'
