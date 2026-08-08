@@ -31,6 +31,7 @@
     "@parcel/packager-xml": "^2.16.4",
     "@parcel/transformer-xml": "^2.16.4",
     "concurrently": "^9.2.1",
+    "events": "^3.3.0",
     "nodemon": "^3.1.11",
     "parcel": "^2.16.4",
     "parcel-reporter-static-files-copy": "^1.5.3",
@@ -38,8 +39,9 @@
     "sharp": "^0.33.5"
   },
   "dependencies": {
-    "@music-ui/abc": "^0.9.0",
-    "@music-ui/piano": "^0.9.0",
+    "@music-ui/abc": "^0.10.0",
+    "@music-ui/core": "^0.10.0",
+    "@music-ui/piano": "^0.10.0",
     "abcjs": "^6.6.4",
     "ci": "^2.3.0",
     "marked-footnote": "^1.4.0"

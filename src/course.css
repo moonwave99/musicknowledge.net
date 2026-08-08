@@ -108,8 +108,8 @@
 
 [data-abc],
 [data-piano] {
-  --piano-white-key-highlight-color: var(--accent-color);
-  --piano-black-key-highlight-color: var(--accent-color);
+  --piano-white-key-group-1-highlight-color: var(--accent-color);
+  --piano-black-key-group-1-highlight-color: var(--accent-color);
   --piano-white-key-group-2-highlight-color: var(--accent-color-secondary);
   --piano-black-key-group-2-highlight-color: var(--accent-color-secondary);
   &[data-piano] {
@@ -124,8 +124,15 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     background-color: color-mix(in srgb, var(--accent-color), white 90%);
 
-    .audio-controls {
-      margin: 1rem 0;
+    .controls {
+      margin: 0.5rem 0;
+      display: flex;
+      gap: 0.5rem;
+      .control-button {
+        padding: 0 0.5rem;
+        line-height: 1.25rem;
+        text-transform: capitalize;
+      }
     }
   }
 
