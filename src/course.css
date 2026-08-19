@@ -6,7 +6,7 @@
 .section.lesson {
   --title-font-size: 3rem;
   .container {
-    .content {
+    .content:not(:is(code)) {
       gap: 3.5rem;
       max-width: min(var(--copy-text-width), 90vw);
       header {
@@ -118,20 +118,30 @@
     gap: 1rem;
   }
 
+  code {
+    display: none;
+  }
+
   &[data-abc] {
     border-radius: 0.5rem;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     background-color: color-mix(in srgb, var(--accent-color), white 90%);
-
+    .piano {
+      margin-top: 1rem;
+    }
     .controls {
-      margin: 0.5rem 0;
-      display: flex;
-      gap: 0.5rem;
-      .control-button {
-        padding: 0 0.5rem;
-        line-height: 1.25rem;
+      > button {
+        border: none;
+        line-height: 2;
         text-transform: capitalize;
+        background-color: var(--accent-color);
+        &:hover {
+          background-color: var(--accent-color);
+          &:not([disabled]) {
+            opacity: 0.8;
+          }
+        }
       }
     }
   }
@@ -139,10 +149,6 @@
   .piano .key.color-white.key-on.two,
   .piano .key.color-black.key-on.two {
     background-color: var(--accent-color-secondary);
-  }
-
-  code {
-    display: none;
   }
   .highlight {
     fill: var(--accent-color);

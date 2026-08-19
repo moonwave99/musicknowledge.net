@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@music-ui/abc':
-        specifier: ^0.10.0
-        version: 0.10.0
+        specifier: ^0.11.0
+        version: 0.11.0
       '@music-ui/core':
-        specifier: ^0.10.0
-        version: 0.10.0
+        specifier: ^0.11.0
+        version: 0.11.0
       '@music-ui/piano':
-        specifier: ^0.10.0
-        version: 0.10.0
+        specifier: ^0.11.0
+        version: 0.11.0
       abcjs:
         specifier: ^6.6.4
         version: 6.6.4
@@ -260,14 +260,14 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@music-ui/abc@0.10.0':
-    resolution: {integrity: sha512-O5ugv8z+u+s1fvfPfP/EAD/2MmlJf3HMT1/t2ll7b680vDcxbwtSGszt2Vrhgzi53bCOMfIJZ7m1NEfCBaGX9Q==}
+  '@music-ui/abc@0.11.0':
+    resolution: {integrity: sha512-EIte3vFeM86jPi6dyYCNKXjfVEWXkGY2i3gtAHynKgFEi8NkF7lzg2lk5VntKCk87b3aJIqE75noYAp8e2fhiQ==}
 
-  '@music-ui/core@0.10.0':
-    resolution: {integrity: sha512-S/IMlGiDUMxb3wf6wBP3calVVUYto9AcOMqITA/jyzZ2Xc1UHP9CzgnKcU6mVGxn/NhEbFNJ0Fqb1ifvq3vNww==}
+  '@music-ui/core@0.11.0':
+    resolution: {integrity: sha512-L1+4iL7UH8UFB7PStzTPCFOKDY1MNpBMH82iKgFYN/IRa6eN5NmFQMoszdkB+GXfywVd1iq2fiMEoBiM6+3Yzw==}
 
-  '@music-ui/piano@0.10.0':
-    resolution: {integrity: sha512-E9KExrOBhpPWkLq7ox1VoAA72k+/TGwjZVOvQK2mzvW1urKguIj66QGIh1VUyldADjAdUJCFPXQDyYe3QHtFMg==}
+  '@music-ui/piano@0.11.0':
+    resolution: {integrity: sha512-wAxJcL2oPCBxw6TlDKA09LMHZL2TxEDZqsAOTbwPH7EFcsIRHSlMR8hzwuWi1wxY3jyWLyKt1NF83EWTIXYCoA==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -973,6 +973,14 @@ packages:
       supports-color: '*'
     peerDependenciesMeta:
       supports-color:
+        optional: true
+
+  dedent@1.7.2:
+    resolution: {integrity: sha512-WzMx3mW98SN+zn3hgemf4OzdmyNhhhKz5Ay0pUfQiMQ3e1g+xmTJWp/pKdwKVXhdSkAEGIIzqeuWrL3mV/AXbA==}
+    peerDependencies:
+      babel-plugin-macros: ^3.1.0
+    peerDependenciesMeta:
+      babel-plugin-macros:
         optional: true
 
   depd@2.0.0:
@@ -1912,26 +1920,35 @@ snapshots:
   '@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3':
     optional: true
 
-  '@music-ui/abc@0.10.0':
+  '@music-ui/abc@0.11.0':
     dependencies:
+      '@music-ui/core': 0.11.0
+      '@music-ui/piano': 0.11.0
       '@tonaljs/midi': 4.10.2
       abcjs: 6.7.0
+    transitivePeerDependencies:
+      - babel-plugin-macros
 
-  '@music-ui/core@0.10.0':
+  '@music-ui/core@0.11.0':
     dependencies:
       '@tonaljs/abc-notation': 4.9.1
       '@tonejs/midi': 2.0.28
       abcjs: 6.7.0
+      dedent: 1.7.2
       events: 3.3.0
       md5: 2.3.0
       tone: 15.1.22
+    transitivePeerDependencies:
+      - babel-plugin-macros
 
-  '@music-ui/piano@0.10.0':
+  '@music-ui/piano@0.11.0':
     dependencies:
-      '@music-ui/core': 0.10.0
+      '@music-ui/core': 0.11.0
       '@tonaljs/midi': 4.10.2
       '@tonaljs/note': 4.12.1
       change-case: 5.4.4
+    transitivePeerDependencies:
+      - babel-plugin-macros
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -2902,6 +2919,8 @@ snapshots:
       ms: 2.1.3
     optionalDependencies:
       supports-color: 5.5.0
+
+  dedent@1.7.2: {}
 
   depd@2.0.0: {}
 

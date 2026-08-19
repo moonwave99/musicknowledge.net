@@ -39,9 +39,9 @@
     "sharp": "^0.33.5"
   },
   "dependencies": {
-    "@music-ui/abc": "^0.10.0",
-    "@music-ui/core": "^0.10.0",
-    "@music-ui/piano": "^0.10.0",
+    "@music-ui/abc": "^0.11.0",
+    "@music-ui/core": "^0.11.0",
+    "@music-ui/piano": "^0.11.0",
     "abcjs": "^6.6.4",
     "ci": "^2.3.0",
     "marked-footnote": "^1.4.0"

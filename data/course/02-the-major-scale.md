@@ -13,12 +13,12 @@ cover:
 _Writing about music is like dancing about architecture_, somebody said.  
 That's why we'll start by listening to a nice melody at least:
 
-```abc
-X:1
+```abc show-piano
 T:You Are My Sunshine
 C:Traditional
 M:4/4
 L:1/4
+Q:180
 K:C
 z G, C D|E2 E2-| E E D E| C2 C2-|
 w:You are my sun-shine,_ my on-ly sun-shine.
@@ -47,8 +47,7 @@ Listen to the melody again and pay attention to the little piano below the score
 
 Listen to the following now:
 
-```abc
-X:2
+```abc show-piano
 M:1/1
 L:1
 CDEFGABc
@@ -87,8 +86,7 @@ This is a very convenient way to navigate the keyboard, both visually and tactfu
 
 Listen to the following two sequences:
 
-```abc
-X:4
+```abc show-piano
 M:1/1
 L:1
 CDEFGABc | z | cdefgabc'
@@ -104,8 +102,7 @@ There is nothing inherently special about the C major scale, besides the fact th
 
 We know how the first note of the scale is called, but what about the others?
 
-```abc hideplayer hidepiano
-X:5
+```abc
 M:1/1
 L:1
 CDEFGABc

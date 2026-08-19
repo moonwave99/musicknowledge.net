@@ -7,11 +7,16 @@ function image({ text, href }) {
 
 function code({ lang, text }) {
   const tokens = lang.split(" ");
-  if (tokens.includes("abc") || tokens.includes("piano")) {
-    return `<div ${tokens.map((x) => `data-${x}`).join(" ")}>
-      <code>
-${text}
-      </code>
+  if (tokens.includes("abc")) {
+    return `<div class="abc-score" ${tokens.map((x) => `data-${x}`).join(" ")}>
+      <code class="content">${text}</code>
+      <div class="staff"></div>
+      <div class="controls"></div>
+    </div>`;
+  }
+  if (tokens.includes("piano")) {
+    return `<div class="piano" ${tokens.map((x) => `data-${x}`).join(" ")}>
+      <code class="content">${text}</code>
     </div>`;
   }
   return `<pre><code>${content}</code></pre>`;
