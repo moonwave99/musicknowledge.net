@@ -49,8 +49,9 @@ Listen to the following now:
 
 ```abc show-piano
 M:1/1
+Q:360
 L:1
-CDEFGABc
+CDEFGABc|
 ```
 
 Just the white keys again, more precisely we listened to:
@@ -88,8 +89,9 @@ Listen to the following two sequences:
 
 ```abc show-piano
 M:1/1
+Q:360
 L:1
-CDEFGABc | z | cdefgabc'
+CDEFGABc || cdefgabc'|
 ```
 
 They are not technically the same notes because they are played in different locations, but they sound _extremely similar_. That's because we are playing the same thing - the C major scale - **in different octaves**. Different keys, but same pattern.
@@ -104,6 +106,7 @@ We know how the first note of the scale is called, but what about the others?
 
 ```abc
 M:1/1
+Q:360
 L:1
 CDEFGABc
 w: C D E F G A B C
