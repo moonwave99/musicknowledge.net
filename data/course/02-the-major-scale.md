@@ -11,9 +11,9 @@ cover:
 ---
 
 _Writing about music is like dancing about architecture_, somebody said.  
-That's why we'll start by listening to a nice melody at least:
+That's why we'll start by listening to some music, and to some beautiful one possibly!
 
-```abc show-piano
+```abc show-piano highlight-bars
 T:You Are My Sunshine
 C:Traditional
 M:4/4

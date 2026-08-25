@@ -5,7 +5,7 @@ allowBuilds:
   msgpackr-extract: true
   sharp: true
 minimumReleaseAgeExclude:
-  - '@music-ui/abc@0.8.0 || 0.9.0 || 0.10.0 || 0.11.0 || 0.12.0'
-  - '@music-ui/piano@0.8.0 || 0.9.0 || 0.10.0 || 0.11.0 || 0.12.0'
-  - '@music-ui/core@0.10.0 || 0.11.0 || 0.12.0'
+  - '@music-ui/abc@0.8.0 || 0.9.0 || 0.10.0 || 0.11.0 || 0.12.0 || 0.13.0'
+  - '@music-ui/piano@0.8.0 || 0.9.0 || 0.10.0 || 0.11.0 || 0.12.0 || 0.13.0'
+  - '@music-ui/core@0.10.0 || 0.11.0 || 0.12.0 || 0.13.0'
   - abcjs@6.7.0

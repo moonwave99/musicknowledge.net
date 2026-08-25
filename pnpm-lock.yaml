@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@music-ui/abc':
-        specifier: ^0.12.0
-        version: 0.12.0
+        specifier: ^0.13.0
+        version: 0.13.0
       '@music-ui/core':
-        specifier: ^0.12.0
-        version: 0.12.0
+        specifier: ^0.13.0
+        version: 0.13.0
       '@music-ui/piano':
-        specifier: ^0.12.0
-        version: 0.12.0
+        specifier: ^0.13.0
+        version: 0.13.0
     devDependencies:
       '@moonwave99/goffre':
         specifier: ^0.1.5
@@ -254,14 +254,14 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@music-ui/abc@0.12.0':
-    resolution: {integrity: sha512-nxP5s/K9PuLL6BhpE3MaQlJPPKTlYPP2IC5qx7JQ4rprIE/IphPLkwBmb6bFkegp/9qgNIWxiNNqDeG0P/dXEg==}
+  '@music-ui/abc@0.13.0':
+    resolution: {integrity: sha512-Q+iOtVW/9FEgdhPa7mHWCBgNGfFCB2xyFJKhM48qSg1y0rTYcjx511yO9HOL/033pwl0Kdi4Y5ZGaGV8EV1mWA==}
 
-  '@music-ui/core@0.12.0':
-    resolution: {integrity: sha512-WcgXKGbYZOZvS1CG1Q+BJCC4f0c8EImpwXCxpeG2GGJ8InMCGA2B45OLuia1FYVperaC/hpWHLS6eQqHNfJjvQ==}
+  '@music-ui/core@0.13.0':
+    resolution: {integrity: sha512-/uI9APnEAZW7+udu9mx8SgjtblmcywyYwajqvaAc9JntWFysJDutszz9GcFsQLP+vJf1Pl/xs6P6biVpSWPRZg==}
 
-  '@music-ui/piano@0.12.0':
-    resolution: {integrity: sha512-5jlXg+Rm9UrfeEIm2bxLS6wLNnlB9S0KuyHijWm89WPCczqHmU+Ln2/5XQcJIo9Q1qQiifoIbXcjvsRW27YO9w==}
+  '@music-ui/piano@0.13.0':
+    resolution: {integrity: sha512-vhUxqddNRxmx9jma5YtqguNDnElzcpTQ4G4at3tFaN08Hn+rFecQO0ave8yQ/VyWMkjzDrNsrIWcD+80gg3u6A==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1907,16 +1907,16 @@ snapshots:
   '@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3':
     optional: true
 
-  '@music-ui/abc@0.12.0':
+  '@music-ui/abc@0.13.0':
     dependencies:
-      '@music-ui/core': 0.12.0
-      '@music-ui/piano': 0.12.0
+      '@music-ui/core': 0.13.0
+      '@music-ui/piano': 0.13.0
       '@tonaljs/midi': 4.10.2
       abcjs: 6.7.0
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@music-ui/core@0.12.0':
+  '@music-ui/core@0.13.0':
     dependencies:
       '@tonaljs/abc-notation': 4.9.1
       '@tonejs/midi': 2.0.28
@@ -1928,9 +1928,9 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@music-ui/piano@0.12.0':
+  '@music-ui/piano@0.13.0':
     dependencies:
-      '@music-ui/core': 0.12.0
+      '@music-ui/core': 0.13.0
       '@tonaljs/midi': 4.10.2
       '@tonaljs/note': 4.12.1
       change-case: 5.4.4

@@ -1,11 +1,11 @@
 import { initABCScoreWithPlayer } from "@music-ui/abc";
 import { Piano } from "@music-ui/piano";
-import { Player, getAbcScore } from "@music-ui/core";
+import { playerFactory, getAbcScore } from "@music-ui/core";
 
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
-  const player = new Player();
+  const player = playerFactory();
   document.querySelectorAll("[data-piano]").forEach(initPiano);
   initABCScoreWithPlayer({ selection: "[data-abc]", player });
 }
