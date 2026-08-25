@@ -1,30 +1,28 @@
 import { initABCScoreWithPlayer } from "@music-ui/abc";
 import { Piano } from "@music-ui/piano";
-import { playerFactory, getAbcScore } from "@music-ui/core";
+import {
+  playerFactory,
+  getAbcScore,
+  extractElementOptions,
+} from "@music-ui/core";
 
-window.addEventListener("DOMContentLoaded", init);
-
-function init() {
-  const player = playerFactory();
+window.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-piano]").forEach(initPiano);
-  initABCScoreWithPlayer({ selection: "[data-abc]", player });
-}
+  initABCScoreWithPlayer({ selection: "[data-abc]", player: playerFactory() });
+});
 
-function parseElementOptions(element, index) {
-  return {
-    id: element.dataset.id || String(index + 1),
-    hidePlayer: Boolean(element.dataset.hidePlayer),
-    hidePiano: Boolean(element.dataset.hidePiano),
-    bpm: Number(element.dataset.bpm) || 120,
-    content: element.querySelector("code").textContent,
-  };
-}
+const DEFAULT_PIANO_OPTIONS = {
+  octaves: 5,
+  startOctave: 2,
+  showOctaves: false,
+  withFinalC: true,
+};
 
 function initPiano(element) {
   return new Piano({
     element,
-    octaves: 5,
-    startOctave: 2,
+    ...DEFAULT_PIANO_OPTIONS,
+    ...extractElementOptions(element, DEFAULT_PIANO_OPTIONS),
   })
     .render()
     .setNotes(
