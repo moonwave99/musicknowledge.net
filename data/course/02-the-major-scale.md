@@ -50,8 +50,8 @@ Listen to the following now:
 
 ```abc show-piano
 M:1/1
-Q:360
-L:1
+Q:200
+L:1/1
 CDEFGABc|
 ```
 
@@ -90,8 +90,8 @@ Listen to the following two sequences:
 
 ```abc show-piano
 M:1/1
-Q:360
-L:1
+Q:200
+L:1/1
 CDEFGABc || cdefgabc'|
 ```
 
@@ -107,8 +107,8 @@ We know how the first note of the scale is called, but what about the others?
 
 ```abc
 M:1/1
-Q:360
-L:1
+Q:200
+L:1/1
 CDEFGABc
 w: C D E F G A B C
 ```

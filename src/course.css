@@ -131,7 +131,7 @@
       margin-top: 1rem;
     }
     .controls {
-      > button {
+      button {
         border: none;
         line-height: 2;
         text-transform: capitalize;
@@ -142,6 +142,9 @@
             opacity: 0.8;
           }
         }
+      }
+      input[type="range"] {
+        accent-color: var(--accent-color);
       }
     }
   }
