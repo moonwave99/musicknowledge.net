@@ -27,11 +27,13 @@ function isHomepage(context) {
   return context.fn(this);
 }
 
-function isCourse(context) {
-  if (!context.data.root.slug.startsWith("course")) {
-    return;
-  }
-  return context.fn(this);
+function isSection(slug) {
+  return (context) => {
+    if (!context.data.root.slug.startsWith(slug)) {
+      return;
+    }
+    return context.fn(this);
+  };
 }
 
 export function getHelpers() {
@@ -40,6 +42,7 @@ export function getHelpers() {
     getUrl,
     getNavClass,
     isHomepage,
-    isCourse,
+    isCourse: isSection("course"),
+    isGuitarChordsCheatsheet: isSection("guitar-chords-cheatsheet"),
   };
 }
