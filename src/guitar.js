@@ -1,9 +1,9 @@
-import { Fretboard } from "@moonwave99/fretboard.js";
+import { Fretboard } from "@music-ui/fretboard";
 
 window.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("[data-chord]").forEach((el) => {
+  document.querySelectorAll("[data-chord]").forEach((element) => {
     const fretboard = new Fretboard({
-      el,
+      element,
       width: 300,
       height: 200,
       bottomPadding: 5,
@@ -21,17 +21,17 @@ window.addEventListener("DOMContentLoaded", () => {
       dotText: ({ string }) => fingers[string - 1],
     });
 
-    const { chord, fingers: _fingers, title: _title } = el.dataset;
+    const { chord, fingers: _fingers, title: _title } = element.dataset;
     const fingers = _fingers.split("").reverse();
 
     fretboard.renderChord(chord);
 
     const caption = document.createElement("figcaption");
     caption.textContent = chord;
-    el.append(caption);
+    element.append(caption);
 
     const title = document.createElement("h3");
     title.textContent = _title;
-    el.prepend(title);
+    element.prepend(title);
   });
 });

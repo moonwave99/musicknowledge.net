@@ -40,9 +40,9 @@
     "sharp": "^0.33.5"
   },
   "dependencies": {
-    "@moonwave99/fretboard.js": "^0.2.13",
     "@music-ui/abc": "^0.14.0",
     "@music-ui/core": "^0.14.0",
+    "@music-ui/fretboard": "^0.14.1",
     "@music-ui/piano": "^0.14.0"
   }
 }
