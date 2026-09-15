@@ -14,7 +14,7 @@
     "staticPath": "./src/static"
   },
   "scripts": {
-    "start": "NODE_ENV=dev pnpm concurrently 'npm run dev:site' 'npm run dev:client'",
+    "start": "NODE_ENV=dev pnpm run --parallel /^dev:/",
     "build": "pnpm run build:site && pnpm run build:client",
     "dev:client": "parcel 'output/**/*.{html,xml}'",
     "dev:site": "pnpm nodemon -e js,json,md,handlebars --watch data --watch src --watch ./",
@@ -40,9 +40,9 @@
     "sharp": "^0.33.5"
   },
   "dependencies": {
-    "@music-ui/abc": "^0.15.0",
-    "@music-ui/core": "^0.15.0",
-    "@music-ui/fretboard": "^0.15.0",
-    "@music-ui/piano": "^0.15.0"
+    "@music-ui/abc": "^0.16.0",
+    "@music-ui/core": "^0.16.0",
+    "@music-ui/fretboard": "^0.16.0",
+    "@music-ui/piano": "^0.16.0"
   }
 }
