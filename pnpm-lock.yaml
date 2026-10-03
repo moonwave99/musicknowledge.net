@@ -9,17 +9,17 @@ importers:
   .:
     dependencies:
       '@music-ui/abc':
-        specifier: ^0.16.0
-        version: 0.16.0
+        specifier: ^0.17.0
+        version: 0.17.0
       '@music-ui/core':
-        specifier: ^0.16.0
-        version: 0.16.0
+        specifier: ^0.17.0
+        version: 0.17.0
       '@music-ui/fretboard':
-        specifier: ^0.16.0
-        version: 0.16.0
+        specifier: ^0.17.0
+        version: 0.17.0
       '@music-ui/piano':
-        specifier: ^0.16.0
-        version: 0.16.0
+        specifier: ^0.17.0
+        version: 0.17.0
     devDependencies:
       '@moonwave99/goffre':
         specifier: ^0.1.5
@@ -257,17 +257,17 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@music-ui/abc@0.16.0':
-    resolution: {integrity: sha512-4PtON8zQ2UwAjTEExYrxcY9kniQZMianVNAOyTxz5mzr7BbhO0ebr0tKTnBwUAaQrFOOG9V0luZU4JfnU/Z04Q==}
+  '@music-ui/abc@0.17.0':
+    resolution: {integrity: sha512-0fUmhEwGIdi7gjwwg1APYfogFaVTHS988gqcvTyeKff+NY+7i2naCB6s6cXzKRqtov09rwiIFBXT05ulA9Mylw==}
 
-  '@music-ui/core@0.16.0':
-    resolution: {integrity: sha512-CzqVDcGfn/NswD5fMseIS6Nz4ZH4dlgU+hx5Hc/NY+wGW9B3jqYQ2B0DOYnvAPfgVvSNFhwVBNiOZVHEmOgQng==}
+  '@music-ui/core@0.17.0':
+    resolution: {integrity: sha512-ayDa3ivMXCYoFuk7eS/DnQWgIRUk+xxT7YkJZ74LOOTHfmvFRxueU82Req4JadmE0UbrRQ4wuF3UK2LrwLUVjw==}
 
-  '@music-ui/fretboard@0.16.0':
-    resolution: {integrity: sha512-M8OjfTlhtJBdnD12fyIA/VxFmWM0fgPbF6y9TngKFYBXEfw+s5IrbWSodbCuAZNKZMxSuXt30wg1c6tFvqDUsQ==}
+  '@music-ui/fretboard@0.17.0':
+    resolution: {integrity: sha512-NgKjXSisET1f2h3u8xTk9Ia93Hbf0mbmpPwiZ748nFCXSHF0/iSHmOI3dZrFC4prR6K3pfADdP7m0GeCxgjVfA==}
 
-  '@music-ui/piano@0.16.0':
-    resolution: {integrity: sha512-GEppKot0o12ULF3VRcegZ1Xn8q4aZquee6mCzbjowrAx0VATqfFEWuhCe0Zmak2Ij2zaANhSYlyYHpJD7vHf9w==}
+  '@music-ui/piano@0.17.0':
+    resolution: {integrity: sha512-2IPJfLlI4GAOba42Kvaxz8DzEAxDsRrtr5IW59NT1+oxkVOb4d3j1HkjtU3HrLewKy5L2DM9B9+9oiO8PciLNA==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1944,15 +1944,15 @@ snapshots:
   '@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3':
     optional: true
 
-  '@music-ui/abc@0.16.0':
+  '@music-ui/abc@0.17.0':
     dependencies:
-      '@music-ui/core': 0.16.0
-      '@music-ui/piano': 0.16.0
+      '@music-ui/core': 0.17.0
+      '@music-ui/piano': 0.17.0
       abcjs: 6.7.0
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@music-ui/core@0.16.0':
+  '@music-ui/core@0.17.0':
     dependencies:
       '@tonaljs/abc-notation': 4.9.1
       '@tonaljs/chord': 6.1.2
@@ -1968,9 +1968,9 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@music-ui/fretboard@0.16.0':
+  '@music-ui/fretboard@0.17.0':
     dependencies:
-      '@music-ui/core': 0.16.0
+      '@music-ui/core': 0.17.0
       '@tonaljs/interval': 5.1.0
       '@tonaljs/mode': 4.9.2
       '@tonaljs/note': 4.12.1
@@ -1979,9 +1979,9 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@music-ui/piano@0.16.0':
+  '@music-ui/piano@0.17.0':
     dependencies:
-      '@music-ui/core': 0.16.0
+      '@music-ui/core': 0.17.0
     transitivePeerDependencies:
       - babel-plugin-macros
 
