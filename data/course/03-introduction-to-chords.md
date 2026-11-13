@@ -57,6 +57,26 @@ We call this a concrete **voicing** of the C major chord on the piano.
 
 This means for example that if you have to play the chords **C major**, **A minor** and **G major** with no further information, you have to decide how to _voice_ them on your instrument depending on the context. Are you comping a singer? Are you making a gentle introduction to a piece? Or are you playing in a band where the bass player is already taking care of the lowest notes?
 
-## Quality of a chord
+We'll learn how to develop your own chord voicings by seeing what's happening in the music we like.
+
+## The quality of a chord
+
+Since we already mentioned it, let's have a listen to the chords of the verse of _Let it be_:
+
+```abc show-piano start-octave=2 show-octaves
+Q:90
+L:2/4
+%%staves \{V1 V2\}
+V:V1 clef=treble
+V:V2 clef=bass
+[V:V1] [EGc]   [DGB]   | [EAc]   [FAc]   | [EGc]   [DGB]   | [FAc]/2   [EGB]/4   [DFA]/4    [CEG]   ||
+[V:V2] [C,,C,] [G,,G,] | [A,,A,] [F,,F,] | [C,,C,] [G,,G,] | [F,,F,]/2 [E,,E,]/4 [D,,D,]/4  [C,,C,] ||
+```
+
+Observe how just the bare chords without the actual original articulation are enough to evoke the song: that's why chords are so important and beautiful to hear!
+
+The song starts with the notes **C2** / **C3** / **E4** / **G4** / **C5** played together. In order to make abstract considerations over a chord, we take into consideration just the unique note names, without their octave information - in this case we have **C** / **E** / **G**.
+
+Chances are that you are already familiar with this group of notes and recognize it as the **C major** chord.
 
 WIP

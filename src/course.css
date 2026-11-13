@@ -129,6 +129,11 @@
     background-color: color-mix(in srgb, var(--accent-color), white 90%);
     .piano {
       margin-top: 1rem;
+      .octave-label {
+        font-size: 0.6rem;
+        font-weight: 300;
+        line-height: 1.5;
+      }
     }
     .controls {
       button {

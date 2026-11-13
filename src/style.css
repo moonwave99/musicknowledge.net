@@ -33,6 +33,7 @@
   --copy-text-width: 768px;
 
   --abc-selection-color: var(--accent-color);
+  --abc-voice-1-color: var(--accent-color-secondary);
 }
 
 * {
