@@ -6,9 +6,11 @@
     {{ @root.labels.course.lessons.links.next }}
   {{/if}}
   </span>
+  {{#cover}}
   <img
     loading="lazy" class="cover"
-    alt="{{cover.caption}}"
-    src="~/src/assets/covers/{{cover.id}}.jpg?as=webp&width=300"/>
+    alt="{{caption}}"
+    src="~/src/assets/covers/{{id}}.jpg?as=webp&width=300"/>
+  {{/cover}}
   <span>{{title}}</span>
 </a>

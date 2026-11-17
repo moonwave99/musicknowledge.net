@@ -10,8 +10,13 @@ function code({ lang, text }) {
   if (tokens.includes("abc")) {
     return `<div class="abc-score" ${tokens.map((x) => `data-${x}`).join(" ")}>
       <code class="content">${text}</code>
-      <div class="staff"></div>
-      <div class="controls"></div>
+      <header>
+        <span class="title"></span>
+        <div class="controls"></div>
+      </header>
+      <div class="staff-wrapper">
+        <div class="staff"></div>
+      </div>
     </div>`;
   }
   if (tokens.includes("piano")) {

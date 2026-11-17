@@ -33,6 +33,7 @@
   --page-text-width: 1024px;
   --copy-text-width: 768px;
 
+  --figure-header-background-color: #4e4e4e;
   --abc-selection-color: var(--accent-color);
   --abc-voice-1-color: var(--accent-color-secondary);
 }
