@@ -6,18 +6,18 @@ function image({ text, href }) {
 }
 
 function code({ lang, text }) {
-  const tokens = lang.split(" ");
+  const tokens = lang.match(/(?:[^\s"]+|"[^"]*")+/g);
   if (tokens.includes("abc")) {
-    return `<div class="abc-score" ${tokens.map((x) => `data-${x}`).join(" ")}>
+    return `<figure class="abc-score" ${tokens.map((x) => `data-${x}`).join(" ")}>
       <code class="content">${text}</code>
       <header>
-        <span class="title"></span>
+        <figcaption></figcaption>
         <div class="controls"></div>
       </header>
       <div class="staff-wrapper">
         <div class="staff"></div>
       </div>
-    </div>`;
+    </figure>`;
   }
   if (tokens.includes("piano")) {
     return `<div class="piano" ${tokens.map((x) => `data-${x}`).join(" ")}>

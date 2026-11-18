@@ -14,9 +14,7 @@ cover:
 _Writing about music is like dancing about architecture_, somebody said.  
 That's why we'll start by listening to some music, and to some beautiful one possibly!
 
-```abc show-piano highlight-bars
-T:You Are My Sunshine
-C:Traditional
+```abc show-piano highlight-bars title="You Are My Sunshine"
 M:4/4
 L:1/4
 Q:180

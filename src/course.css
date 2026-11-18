@@ -144,10 +144,16 @@
 
   &[data-abc] {
     border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     background-color: color-mix(in srgb, var(--accent-color), white 90%);
     .piano {
-      margin-bottom: 1rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: gray;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
       .octave-label {
         font-size: 0.6rem;
         font-weight: 300;
@@ -162,6 +168,15 @@
       border-top-right-radius: 0.5rem;
       background-color: var(--figure-header-background-color);
       padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      figcaption {
+        font-family: var(--heading);
+        color: var(--color-light);
+        font-size: 0.9rem;
+        font-style: normal;
+      }
     }
     .controls {
       button {
@@ -178,6 +193,9 @@
       }
       input[type="range"] {
         accent-color: var(--accent-color);
+      }
+      .tempo-control {
+        color: var(--color-light);
       }
     }
   }

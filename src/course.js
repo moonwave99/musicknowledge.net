@@ -8,7 +8,15 @@ import {
 
 window.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-piano]").forEach(initPiano);
-  initABCScoreWithPlayer({ selection: "[data-abc]", player: playerFactory() });
+  const selection = document.querySelectorAll("[data-abc]");
+  initABCScoreWithPlayer({ selection, player: playerFactory() });
+  selection.forEach((el) => {
+    const title = el.dataset.title;
+    if (!title) {
+      return;
+    }
+    el.querySelector("figcaption").innerHTML = title;
+  });
 });
 
 const DEFAULT_PIANO_OPTIONS = {
