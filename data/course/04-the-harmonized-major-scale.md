@@ -1,11 +1,14 @@
 ---
 template: course/lesson
 index: 4
-id: piano-chords-cheatsheet
-slug: course/piano-chords-cheatsheet
-title: Piano Chords Cheatsheet
-date: 2026-11-01
-description: Make your chords sound fuller when comping a song!
+id: the-harmonized-major-scale
+slug: course/the-harmonized-major-scale
+title: The harmonized major scale
+date: 2026-11-12
+description: Make sense of chord motions by having a look at the big picture.
+cover:
+  id: arthur_hughes_a_music_party
+  caption: Arthur Hughes, A music party
 ---
 
 We'll see some examples in the key of **C major** for example's sake, and because it's easy to navigate the white keys. This does not mean you should neglect the other keys! But this is the easiest starting point if you are not familiar with chord building.
