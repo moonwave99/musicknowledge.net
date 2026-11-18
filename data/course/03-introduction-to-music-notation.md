@@ -1,0 +1,14 @@
+---
+template: course/lesson
+index: 3
+id: introduction-to-music-notation
+slug: course/introduction-to-music-notation
+title: Introduction to music notation
+date: 2026-11-01
+description: Carve beauty in stone and it will outlive those who witnessed it.
+cover:
+  id: j_w_waterhouse_saint_cecilia
+  caption: J.W. Waterhouse, Saint Cecilia
+---
+
+WIP

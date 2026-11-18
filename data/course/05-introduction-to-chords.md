@@ -1,6 +1,6 @@
 ---
 template: course/lesson
-index: 3
+index: 5
 id: introduction-to-chords
 slug: course/introduction-to-chords
 title: Introduction to chords

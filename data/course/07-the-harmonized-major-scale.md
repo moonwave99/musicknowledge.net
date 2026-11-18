@@ -1,6 +1,6 @@
 ---
 template: course/lesson
-index: 4
+index: 7
 id: the-harmonized-major-scale
 slug: course/the-harmonized-major-scale
 title: The harmonized major scale
@@ -11,7 +11,11 @@ cover:
   caption: Arthur Hughes, A music party
 ---
 
-We'll see some examples in the key of **C major** for example's sake, and because it's easy to navigate the white keys. This does not mean you should neglect the other keys! But this is the easiest starting point if you are not familiar with chord building.
+If I should name a concept that really unlocked my understanding of music, that would be building chords on top of the degrees of the major scale. This process is also called **the harmonization of the (major) scale**.
+
+We'll see some examples in the key of **C major** because it's very easy to navigate the white keys. This does not mean you should neglect the other keys! But this is the easiest starting point if you are not familiar with chord building.
+
+Extremely important, and will be reiterated throughout this lesson: **there is nothing special about the key of C major**. But we have to start somewhere. Every time you learn a next concept, apply to all other keys: you will reinforce it and at the same time find new connections inside the topology of your instrument.
 
 ## The degrees of the major scale
 
@@ -26,13 +30,13 @@ w: C D E F G A B (C)
 w: 1 2 3 4 5 6 7 (1)
 ```
 
-We associate an ascending number to each note. The notes of a scale are called **degrees**. We say for instance that _G is the fifth degree of the C major scale_. C is obviously the first degree of the C major scale.
+Let's associate an ascending number to each note. The notes of a scale are called **degrees**. We say for instance that _G is the fifth degree of the C major scale_. C is obviously the first degree of the C major scale.
 
 ### The C major triad
 
 As the name suggests, a **triad** is a **chord made of three notes**.
 
-There are various ways to build triads, let's take the empiric route:
+In case you already how to play a C major triad on the piano, let's pretend we don't and let's take the following road over **the white keys**:
 
 - we start from **C** (1);
 - let's skip a note (D, 2);
@@ -51,11 +55,11 @@ L:1/1
 
 That's the **C major triad**, built on degrees 1, 3 and 5 of the C major scale.
 
-C major. _C_ because it's rooted on the note C. _Major_ because the distance between the first two notes of the chord (C and E) is an interval of a **major third**, made of **four semitones**. If your interval knowledge is shaky, [you can brush it up here][course:intervals].
+A triad is identified by two terms: **the root note** (_C_ in this case) and the **triad quality** (_major_ in this case). More in detail, we say _major_ because the distance between the first two notes of the chord (C and E) forms an interval of a **major third**, made of **four semitones**. If your interval knowledge is shaky, [you can brush it up here][course:intervals].
 
 <div class="text-note">
 
-ℹ️ **Note**: remember that the notes that form a chord may appear in any order, and even more than once.
+ℹ️ **Note**: remember that the notes that form a chord may appear in any order, and even more than once over different octaves.
 
 All the chords below are C major chords, even if the bottom note played is not a C:
 
@@ -83,7 +87,7 @@ L:1/1
 
 That's the **D minor** triad. Check the distance between D and F: it's three semitones, a **minor third**! That's why it's called D minor.
 
-### All the triads of C major
+### All the triads of the key of C major
 
 If you apply the same process to each note of the scale, you'll obtain the following triads:
 
@@ -97,7 +101,7 @@ w: C Dm Em F G Am Bo
 
 <div class="text-note">
 
-ℹ️ **Note**: extremely important, _don't skip this process!_ You'll be able to comfortably navigate the note landscape just if you explore it yourself. Don't resort to existing schemas, use them just to check that your wanderings brought you to the right places.
+ℹ️ **Extremely important, don't skip this process!** You'll be able to comfortably navigate the note landscape just if you explore it yourself. Don't resort to existing schemas, use them just to check that your wanderings brought you to the right places.
 
 </div>
 
@@ -115,15 +119,15 @@ In a more structured way:
 
 Observations:
 
-- degrees 1, 4 and 5 - C, F and G - are **major**;
-- degrees 2, 3 and 6 - D, E and A - are **minor**;
-- degree 7 - B - is **diminished**.
+- chords build on degrees **1**, **4** and **5** (C, F and G) are **major**;
+- chords build on degrees **2**, **3** and **6** (D, E and A) are **minor**;
+- chord build on degree **7** (B) is **diminished**.
 
 Why diminished? Because the distance between the first and the third note of the chord (B to F) is **a diminished fifth**, made of 6 semitones. This interval is also called the **tritone**, we'll talk about its importance more in detail later.
 
 The distance between the first and the third note of all the other chords is always of 7 semitones or a **perfect fifth** (count it yourself on the keyboard!).
 
-By the way, this process is called **the harmonization of the C major key**, or building **the diatonic triads of the key of C major**. Diatonic means _strictly belonging to the key_. Why do we specify it? because you may have noticed how we haven't touched any black key in this process. But nothing prevents us from playing them!
+We have just discovered **the diatonic triads of the key of C major**. Diatonic means _strictly belonging to the key_. Why do we specify it? because you may have noticed how we haven't touched any black key in this process. But nothing prevents us from playing them!
 
 ```abc show-piano show-octaves title="The A and D chords are not diatonic to C major"
 M:1/1
@@ -136,6 +140,8 @@ w: C A D G
 In the progression above we played C major, A major, D major and G major.
 
 We say that C and G are **diatonic to C major** because they contain just notes of the key, while A and D major are **chromatic** (or non-diatonic) because they feature C# and F# respectively. There is nothing wrong in being non-diatonic! We'll see soon how and when non-diatonic chords are used, for now let's stick to diatonic ones.
+
+Important: there is nothing exoteric about the chord quality sequence in any key. If you group together a bunch of notes, you'll of course find interesting structures. Go practice those scales and arpeggios if you want to improve your chops instead of worshipping new age snake oil!
 
 ## From chord names to numbers
 
@@ -226,7 +232,18 @@ Structuring:
 
 ## Song examples
 
-WIP
+Here you can find some progressions used in popular songs, have fun!
+
+```abc show-piano show-octaves title="The Cranberries - Zombie"
+Q:75
+L:1/8
+K:G
+%%staves \{V1 V2\}
+V:V1 clef=treble
+V:V2 clef=bass
+[V:V1] [GBe]8              | [Gce]8              | [GBd]8              | [Acf]8              ||
+[V:V2] E,E, E,E, E,E, E,E, | C,C, C,C, C,C, C,C, | G,G, G,G, G,G, G,G, | F,F, F,F, F,F, F,F, ||
+```
 
 ## Conclusion
 

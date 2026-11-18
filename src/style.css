@@ -217,11 +217,7 @@ figure {
   transition: background 0.2s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   &:hover {
-    background-color: color-mix(
-      in srgb,
-      var(--foreground),
-      var(--background) 80%
-    );
+    background-color: color-mix(in srgb, var(--accent-color), transparent 30%);
   }
   &.dark {
     --foreground: var(--color-light);

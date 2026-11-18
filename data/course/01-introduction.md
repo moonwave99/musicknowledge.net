@@ -22,7 +22,7 @@ This course assumes no prior knowledge. The main areas that we will see together
 - how music works over time, **tempo** and **rhythm**;
 - the basics of **standard music notation**;
 - the foundations of **tonal harmony**;
-- an excursus over another approach: **modality**.
+- an excursus over various other approaches as **modality**.
 
 ## What you need
 

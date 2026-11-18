@@ -1,5 +1,5 @@
 <a class="lesson-link action" href="{{getLink .}}">
-  <span>
+  <span class="lesson-link-label">
   {{#if prev }}
     {{ @root.labels.course.lessons.links.prev }}
   {{else}}
@@ -7,10 +7,12 @@
   {{/if}}
   </span>
   {{#cover}}
-  <img
-    loading="lazy" class="cover"
-    alt="{{caption}}"
-    src="~/src/assets/covers/{{id}}.jpg?as=webp&width=300"/>
-  {{/cover}}
-  <span>{{title}}</span>
+  <span class="lesson-link-image-wrapper">
+    <img
+      loading="lazy" class="cover"
+      alt="{{caption}}"
+      src="~/src/assets/covers/{{id}}.jpg?as=webp&width=300"/>
+    {{/cover}}
+  </span>
+  <span class="lesson-link-title">{{title}}</span>
 </a>

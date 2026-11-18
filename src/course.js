@@ -9,6 +9,9 @@ import {
 window.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-piano]").forEach(initPiano);
   const selection = document.querySelectorAll("[data-abc]");
+  if (!selection.length) {
+    return;
+  }
   initABCScoreWithPlayer({ selection, player: playerFactory() });
   selection.forEach((el) => {
     const title = el.dataset.title;

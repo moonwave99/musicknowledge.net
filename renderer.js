@@ -24,7 +24,7 @@ function code({ lang, text }) {
       <code class="content">${text}</code>
     </div>`;
   }
-  return `<pre><code>${content}</code></pre>`;
+  return `<pre><code>${text}</code></pre>`;
 }
 
 export function getRenderer() {
