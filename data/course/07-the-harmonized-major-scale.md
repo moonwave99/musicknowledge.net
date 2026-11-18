@@ -241,8 +241,10 @@ K:G
 %%staves \{V1 V2\}
 V:V1 clef=treble
 V:V2 clef=bass
-[V:V1] [GBe]8              | [Gce]8              | [GBd]8              | [Acf]8              ||
-[V:V2] E,E, E,E, E,E, E,E, | C,C, C,C, C,C, C,C, | G,G, G,G, G,G, G,G, | F,F, F,F, F,F, F,F, ||
+[V:V1] [GBe]8              | [Gce]8              | [GBd]8              | [Adf]8              ||
+[V:V2] E,E, E,E, E,E, F,E, | CC CC CC DC         | G,G, G,G, G,G, A,G, | F,F, F,F, G,F, G,F, ||
+w:     Em                  | C                   | G                   | D/F#
+w:     6                   | 4                   | 1                   | 5
 ```
 
 ## Conclusion
