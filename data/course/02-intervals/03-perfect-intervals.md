@@ -120,10 +120,6 @@ Landscape exploration:
 
 The **quality** of this interval is again **perfect**.
 
-## Augmented and diminished intervals
-
-WIP
-
 ## Conclusion
 
 WIP
