@@ -1,10 +1,10 @@
 ---
 template: course/lesson
 module: intervals
-index: 4.2
-id: intervals-by-number
-slug: course/intervals-by-number
-title: Intervals by number
+index: 2.2
+id: major-and-minor-intervals
+slug: course/major-and-minor-intervals
+title: Major and minor intervals
 description: Our voices jump from note to note. But how big is the leap?
 cover:
   id: william_blake_oberon_titania_and_puck_with_fairies_dancing

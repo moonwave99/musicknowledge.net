@@ -1,7 +1,18 @@
-<ul class="course-list">
-  {{#each lessons}}
-  <li>
-    <a href="{{ getParamLink '/course/:id' id=id }}">{{title}}</a>
-  </li>
+<div class="course-list">
+  {{#each groupedLessons }}
+  <section class="course-list-section">
+    <h3>{{ info.title }}</h3>
+    {{#info.description}}
+    <p>{{ . }}</p>
+    {{/info.description}}
+    <ol>
+      {{#each lessons}}
+      <li>
+        <a href="{{ getParamLink '/course/:id' id=id }}">{{title}}</a>
+      </li>
+      {{/each}}
+    </ol>
+  </section>
   {{/each}}
-</ul>
+</div>
+

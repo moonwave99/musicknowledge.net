@@ -1,6 +1,7 @@
 ---
 template: course/lesson
-index: 3
+module: introduction
+index: 1.3
 id: introduction-to-music-notation
 slug: course/introduction-to-music-notation
 title: Introduction to music notation

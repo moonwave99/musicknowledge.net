@@ -1,14 +1,14 @@
 ---
 template: course/lesson
 module: intervals
-index: 4.1
+index: 2.1
 id: introduction-to-intervals
 slug: course/introduction-to-intervals
 title: Introduction to intervals
 description: Our voices jump from note to note. But how big is the leap?
 cover:
-  id: william_blake_oberon_titania_and_puck_with_fairies_dancing
-  caption: William Blake - Oberon, Titania and Puck with Fairies Dancing
+  id: johannes_vermeer_the_music_lesson
+  caption: Johannes Vermeer - The music lesson
 ---
 
 In the [previous lesson][course:introduction-to-music-notation] we got acquainted with the music notation.

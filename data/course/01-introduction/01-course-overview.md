@@ -1,9 +1,10 @@
 ---
 template: course/lesson
-index: 1
-id: introduction
-slug: course/introduction
-title: Introduction to the course
+module: introduction
+index: 1.1
+id: course-overview
+slug: course/course-overview
+title: Course overview
 cover:
   id: gustav-klimt-musik
   caption: Gustav Klimt, Musik

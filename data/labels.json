@@ -31,10 +31,21 @@
   },
   "course": {
     "lessons": {
-      "title": "Lessons",
+      "title": "Lessons index",
       "links": {
         "prev": "Previous Lesson",
         "next": "Next Lesson"
+      },
+      "modules": {
+        "introduction": {
+          "title": "Introduction"
+        },
+        "intervals": {
+          "title": "Intervals"
+        },
+        "scales-chords-progressions": {
+          "title": "Scales, chords and progressions"
+        }
       }
     }
   }

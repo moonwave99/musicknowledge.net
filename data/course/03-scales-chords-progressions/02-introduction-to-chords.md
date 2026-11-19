@@ -1,6 +1,7 @@
 ---
 template: course/lesson
-index: 5
+module: scales-chords-progressions
+index: 3.2
 id: introduction-to-chords
 slug: course/introduction-to-chords
 title: Introduction to chords

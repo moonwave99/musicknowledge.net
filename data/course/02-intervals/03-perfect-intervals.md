@@ -1,17 +1,17 @@
 ---
 template: course/lesson
 module: intervals
-index: 4.3
+index: 2.3
 id: perfect-intervals
 slug: course/perfect-intervals
 title: Perfect intervals
 description: Our voices jump from note to note. But how big is the leap?
 cover:
-  id: william_blake_oberon_titania_and_puck_with_fairies_dancing
-  caption: William Blake - Oberon, Titania and Puck with Fairies Dancing
+  id: pablo_picasso_musicians_with_masks
+  caption: Pablo Picasso, Musicians with masks
 ---
 
-In the [previous lesson][course:intervals-by-number] we learnt how to navigate the letter and the chromatic landscapes.
+In the [previous lesson][course:major-and-minor-intervals] we learnt how to navigate the letter and the chromatic landscapes.
 
 ## The interval of an octave
 
@@ -128,7 +128,7 @@ WIP
 
 WIP
 
-[course:intervals-by-number]: /course/intervals-by-number
+[course:major-and-minor-intervals]: /course/major-and-minor-intervals
 [course:the-harmonic-series]: /course/the-harmonic-series
 [song:somewhere-over-the-rainbow]: https://www.youtube.com/watch?v=PSZxmZmBfnU
 [wiki:equal-temperament]: https://en.wikipedia.org/wiki/Equal_temperament

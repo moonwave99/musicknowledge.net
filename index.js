@@ -16,6 +16,20 @@ const lessons = pages
   .filter((x) => x.slug.startsWith("course/"))
   .toSorted((a, b) => (a.index > b.index ? 1 : -1));
 
+const groupedLessons = Object.entries(
+  Object.groupBy(lessons, (lesson) => lesson.module || "main"),
+).reduce(
+  (memo, [module, lessons]) => [
+    ...memo,
+    {
+      module,
+      lessons,
+      info: json.labels.course.lessons.modules[module],
+    },
+  ],
+  [],
+);
+
 await render({
   buildPath: path.join(process.cwd(), "output"),
   domain: url,
@@ -30,6 +44,7 @@ await render({
       language: "en",
       version: process.env.VERSION,
       lessons,
+      groupedLessons,
       ...json,
       ...page,
     })),

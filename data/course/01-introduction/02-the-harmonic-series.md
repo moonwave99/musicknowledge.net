@@ -1,6 +1,7 @@
 ---
 template: course/lesson
-index: 2
+module: introduction
+index: 1.2
 id: the-harmonic-series
 slug: course/the-harmonic-series
 title: The harmonic series

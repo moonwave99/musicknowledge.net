@@ -1,6 +1,7 @@
 ---
 template: course/lesson
-index: 6
+module: scales-chords-progressions
+index: 3.1
 id: the-major-scale
 slug: course/the-major-scale
 title: The major scale

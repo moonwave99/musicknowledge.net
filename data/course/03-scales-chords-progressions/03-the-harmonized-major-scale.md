@@ -1,6 +1,7 @@
 ---
 template: course/lesson
-index: 7
+module: scales-chords-progressions
+index: 3.3
 id: the-harmonized-major-scale
 slug: course/the-harmonized-major-scale
 title: The harmonized major scale

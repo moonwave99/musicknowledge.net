@@ -1,14 +1,14 @@
 ---
 template: course/lesson
 module: intervals
-index: 4.4
+index: 2.4
 id: intervals-review
 slug: course/intervals-review
 title: Intervals review
 description: Our voices jump from note to note. But how big is the leap?
 cover:
-  id: william_blake_oberon_titania_and_puck_with_fairies_dancing
-  caption: William Blake - Oberon, Titania and Puck with Fairies Dancing
+  id: oskar_kokoschka_the_power_of_music
+  caption: Oskar Kokoschka, The power of music
 ---
 
 WIP
