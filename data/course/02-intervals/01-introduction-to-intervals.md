@@ -27,7 +27,7 @@ An interval is usually expressed by the quality followed by the ordinal number, 
 
 The interval size is unambiguously associated to every quality/number pair.
 
-We'll discuss the possible interval qualities and the size determination process in the next lessons.
+We'll discuss the possible interval qualities and the size determination process in the next lessons, just get familiar with the nomenclature for now.
 
 ### Melodic vs. harmonic intervals
 
@@ -54,6 +54,39 @@ CE | EC
 Even in this case all three properties are the same for both versions.
 
 We'll now see two concepts we'll use to determine the number, quality and size of any interval: the **letter landscape** and **the chromatic landscape**. The former gives us the **number**, the latter the **size**, and with both information will eventually get the **quality**.
+
+### Sum of intervals
+
+Intervals can be added, even though not exactly like one would add natural numbers.
+
+Given for instance the C-E and E-G intervals, we can take into consideration the interval between the first note of the former interval, and the second of the latter:
+
+```abc show-piano show-octaves title="The sum of C4-E4 and E4-G4, C4-G4"
+M:1/1
+Q:200
+L:1/1
+CE | EG | CG
+```
+
+### Inverted intervals
+
+For every interval we find its **inverted or reciprocal interval** by rising the first note by an octave, and flipping the two notes, for example:
+
+```abc show-piano show-octaves title="The C4-E4 interval and its inversion E4-C5"
+M:1/1
+Q:200
+L:1/1
+CE | Ec
+```
+
+Observe how the size of any interval plus its inversion **is always an octave** by construction, since the first note of the original interval becomes the second note of the inversion one octave higher:
+
+```abc show-piano show-octaves title="Various intervals and their respective inversions"
+M:1/1
+Q:200
+L:1/1
+GB | Bg || DA | Ad || _E F | F _e
+```
 
 ## The letter landscape
 
@@ -103,7 +136,7 @@ A B C D E F G | A B C D E F G
 - we walk up over G (2), A (3), B (4);
 - until we reach C (5).
 
-This might look quite pedantic, but many music students fail to memorize these relationships because they haven't explored the letter landscape properly, and find then hard to follow more advanced lessons because they always have to stop to calculate things.
+Many music students fail to memorize these relationships because they haven't explored the letter landscape properly, and find then hard to follow more advanced lessons because they always have to stop to calculate things. Don't be flipping-fingers Joe finding out what interval is A to F while the rest of the classroom already shreds, do your landscape wanderings from the beginning of the journey!
 
 ### Complementary relationships over the landscape
 
@@ -136,37 +169,41 @@ While commuting or jogging, mentally recite for instance _F-G: F, G, two; F-A: F
 
 ### Little check before moving on
 
-Can you tell the _number_ of the following intervals?
+Can you tell the **number** of the following intervals?
 
 <details>
   <summary>
     G to B?
   </summary>
-  G, A, B: three
+  G, A, B: 3/third
 </details>
 
 <details>
   <summary>
     C to B?
   </summary>
-  C, D, E, F, G, A, B: seven
+  C, D, E, F, G, A, B: 7/seventh
 </details>
 
 <details>
   <summary>
     F to C?
   </summary>
-  F, A, G, B, C: five
+  F, A, G, B, C: 5/fifth
 </details>
 
 <details>
   <summary>
     C to F?
   </summary>
-  C, D, E, F: four. But also since F to C was 5, the flipped distance must be 9 - 5 = 4!
-</details>
+
+C, D, E, F: 4/fourth.
+
+But also because since F to C was 5, the flipped distance must be 9 - 5 = 4 again!
 
 I am sure you hit four out of four, aces!
+
+</details>
 
 </div>
 
@@ -184,7 +221,7 @@ C^CD^DEF^FG^GA^ABc
 w: 1 2 3 4 5 6 7 8 9 10 11 12 (13)
 ```
 
-This is called the **chromatic scale**.
+This is called the (ascending) **chromatic scale**.
 
 Let's count how many keys do we need to press to reach G from D, **D excluded**:
 
@@ -196,7 +233,7 @@ D^DEF^FG
 w: (0) 1 2 3 4 5
 ```
 
-We said to exclude D so D# (1), E (2), F (3), F# (4), G (5): five!
+Ready? D# (1), E (2), F (3), F# (4), G (5): five!
 
 <div class="text-note">
 
@@ -294,13 +331,13 @@ D^DEF^FG | G^GA^ABc^cd
 w: (0) 1 2 3 4 5 | (0) 1 2 3 4 5 6 7
 ```
 
-We can also observe that the sizes of the D-G and G-D intervals sum up to 12, unsurprisingly.
+We can also observe that the sizes of the D-G and G-D intervals sum up to 12, like the amount of notes of the whole chromatic scale unsurprisingly.
 
 <div class="text-note">
 
 ### It's check time
 
-Can you tell the _size_ of the following intervals?
+Can you tell the **size** of the following intervals?
 
 <details>
   <summary>
@@ -326,6 +363,12 @@ Can you tell the _size_ of the following intervals?
 </div>
 
 ## Conclusion
+
+We defined what intervals are and their properties, and visited the letter and chromatic landscapes. We know what semitones and tones are.
+
+Remember that the ultimate goal of interval study is knowing every possible note pair properties by heart without hesitation. Take all the time of the world to absorb the concepts of this lesson in depth, then start your daily interval drill and you'll be at professional level way before you would expect.
+
+## Exercises
 
 WIP
 

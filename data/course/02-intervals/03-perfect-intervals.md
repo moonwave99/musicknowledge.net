@@ -11,9 +11,9 @@ cover:
   caption: Pablo Picasso, Musicians with masks
 ---
 
-In the [previous lesson][course:major-and-minor-intervals] we learnt how to navigate the letter and the chromatic landscapes.
+In the [previous lesson][course:major-and-minor-intervals] we introduced the major and minor intervals: seconds and sevenths, thirds and sixths. Let's have a look at what's left: **the octave**, **the unison**, **fourths** and **fifths**.
 
-## The interval of an octave
+## Interval of an octave
 
 We are already friends with this pair of notes:
 
@@ -62,7 +62,7 @@ TL;DR the music predates the piano by quite a few millennia, so be open to explo
 
 </div>
 
-## The unison interval
+## The unison
 
 What happens if we consider two Cs _at the same octave_, the same note that is:
 
@@ -75,7 +75,7 @@ CC
 
 That's a completely legitimate interval and it's called **unison**. Its number is 1 and its size is 0. As for the octave interval, the quality will be revealed in a moment.
 
-## The interval of a fifth
+## Interval of a fifth
 
 We have already encountered this interval after the octave while exploring the harmonic series:
 
@@ -102,7 +102,7 @@ L:1/1
 DA | EB | _B, F | Ae
 ```
 
-## The interval of a fourth
+## Interval of a fourth
 
 We have already seen what an inverted interval is. What is the inverted of C(4)-G(4)? G(4)-C(5):
 
@@ -125,6 +125,10 @@ The **quality** of this interval is again **perfect**.
 WIP
 
 ## Conclusion
+
+WIP
+
+## Exercises
 
 WIP
 

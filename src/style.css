@@ -57,6 +57,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-padding-top: calc(var(--navbar-height) * 2);
+}
+
 main {
   min-height: 90vh;
 }

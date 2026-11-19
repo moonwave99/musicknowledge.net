@@ -12,3 +12,11 @@ cover:
 ---
 
 WIP
+
+## Conclusion
+
+WIP
+
+## Exercises
+
+WIP

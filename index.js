@@ -1,6 +1,8 @@
 import path from "node:path";
 import { load, render } from "@moonwave99/goffre";
 import markedFootnote from "marked-footnote";
+import { gfmHeadingId } from "marked-gfm-heading-id";
+
 import { getRenderer } from "./renderer.js";
 import { getHelpers } from "./helpers.js";
 import pkg from "./package.json" with { type: "json" };
@@ -57,6 +59,6 @@ await render({
   },
   markdown: {
     renderer: getRenderer(),
-    middleware: [markedFootnote],
+    middleware: [markedFootnote, gfmHeadingId],
   },
 });
