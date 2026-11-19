@@ -11,7 +11,7 @@ cover:
   caption: Pablo Picasso, Musicians with masks
 ---
 
-In the [previous lesson][course:major-and-minor-intervals] we introduced the major and minor intervals: seconds and sevenths, thirds and sixths. Let's have a look at what's left: **the octave**, **the unison**, **fourths** and **fifths**.
+In the [previous lesson][course:major-and-minor-intervals] we introduced the major and minor intervals: seconds and sevenths, thirds and sixths. Let's have a look at what's left: **the octave**, **the unison**, **fifths** and **fourths**.
 
 ## Interval of an octave
 
@@ -119,6 +119,60 @@ Landscape exploration:
 - **interval size**: (G), G#, A, A#, B, C: **5**.
 
 The **quality** of this interval is again **perfect**.
+
+## Inverting perfect intervals
+
+What happens if we invert a fifth for instance?
+
+```abc show-piano show-octaves title="The C4-G4 interval and its reciprocal G4-C5"
+M:1/1
+Q:200
+L:1/1
+CG | Gc
+```
+
+C-G perfect fifth, G-C perfect fourth. Let's flip a fourth now:
+
+```abc show-piano show-octaves title="The F4-Bb4 interval and its reciprocal Bb4-F5"
+M:1/1
+Q:200
+L:1/1
+F_B | _Bf
+```
+
+F-Bb perfect fourth, Bb-F perfect fifth. So **perfect intervals stay perfect when inverted**.
+
+By the way, what are the reciprocals of the octave and the unison? Each other! That's because two reciprocal interval should add up to an octave, and if one of the two is already an octave the other should have no size, and the unison is the only candidate with such property. Since flipping an octave or an unison is not a particular fruitful operation, let's leave it as a theoretical curiosity only.
+
+### Inversion number review
+
+Now that we have seen **all possible interval numbers in the range of one octave**, let's review how they behave under inversion:
+
+| Interval Number + Quality | Inverse Number + Quality | Example (Original) | Example (Inverted) |
+| ------------------------- | ------------------------ | ------------------ | ------------------ |
+| major second              | minor seventh            | C-D                | D-C                |
+| minor second              | major seventh            | E-F                | F-E                |
+| major third               | minor sixth              | D-F#               | F#-D               |
+| minor third               | major sixth              | E-G                | G-E                |
+| major sixth               | minor third              | A-F#               | F#-A               |
+| minor sixth               | major third              | B-G                | G-B                |
+| major seventh             | minor second             | D-C#               | C#-D               |
+| minor seventh             | major second             | F-Eb               | Eb-F               |
+| **perfect fourth**        | **perfect fifth**        | C-F                | F-C                |
+| **perfect fifth**         | **perfect fourth**       | D-A                | A-D                |
+
+- perfect fourths flip to perfect fifths and viceversa;
+- seconds flip to sevenths and flip the quality, and viceversa;
+- thirds flip to sixths and flip the quality, and viceversa.
+
+Observe how the interval number and its inverse number **always sum up to 9**:
+
+- 1 + 8 = 9;
+- 2 + 7 = 9;
+- 3 + 6 = 9;
+- 4 + 5 = 9.
+
+And viceversa because addition is commutative.
 
 ## Conclusion
 
