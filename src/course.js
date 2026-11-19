@@ -12,7 +12,13 @@ window.addEventListener("DOMContentLoaded", () => {
   if (!selection.length) {
     return;
   }
-  initABCScoreWithPlayer({ selection, player: playerFactory() });
+  initABCScoreWithPlayer({
+    selection,
+    player: playerFactory(),
+    abcOptions: {
+      responsive: null,
+    },
+  });
   selection.forEach((el) => {
     const title = el.dataset.title;
     if (!title) {
