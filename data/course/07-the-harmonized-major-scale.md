@@ -4,7 +4,6 @@ index: 7
 id: the-harmonized-major-scale
 slug: course/the-harmonized-major-scale
 title: The harmonized major scale
-date: 2026-11-12
 description: Make sense of chord motions by having a look at the big picture.
 cover:
   id: arthur_hughes_a_music_party

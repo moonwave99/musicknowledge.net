@@ -1,29 +1,65 @@
 ---
 template: course/lesson
-index: 4
+module: intervals
+index: 4.1
 id: introduction-to-intervals
 slug: course/introduction-to-intervals
 title: Introduction to intervals
-date: 2026-10-10
 description: Our voices jump from note to note. But how big is the leap?
 cover:
   id: william_blake_oberon_titania_and_puck_with_fairies_dancing
   caption: William Blake - Oberon, Titania and Puck with Fairies Dancing
 ---
 
-In the [previous lesson][course:the-major-scale] we got acquainted with the major scale.
+In the [previous lesson][course:introduction-to-music-notation] we got acquainted with the music notation.
 
-Before moving on with chords and progressions, we need a map to better explore the note landscape. Since music is mainly made by notes played together with or followed by other notes (percussive elements aside!), we'd better know how to measure the distances between them.
+Before moving on with scales, chords and progressions, we need a map to better explore the note territory. Since music is mainly made by notes played together with or followed by other notes (percussive elements aside!), we must know how to categorize the distances between them.
+
+## Definition and properties of an interval
 
 An interval is **the difference in pitch between two sounds**. If the two sound in questions are notes of a music scale, we can determine the interval **number**, **quality** and **size**.
 
+An interval is usually expressed by the quality followed by the ordinal number, e.g.:
+
+- C-E: **major third**;
+- E-F: **minor second**;
+- F-Bb: **perfect fourth**.
+
+The interval size is unambiguously associated to every quality/number pair.
+
+We'll discuss the possible interval qualities and the size determination process in the next lessons.
+
+### Melodic vs. harmonic intervals
+
+An interval is **melodic** if the notes are played in sequence, and **harmonic** if they are played together. Both share the same interval, quality and size.
+
+```abc show-piano show-octaves title="Example of an a melodic and an harmonic interval"
+M:1/1
+Q:200
+L:1/1
+CE | [CE]
+```
+
+### Ascending vs. descending intervals
+
+An interval is **ascending** if the second note is higher in pitch than the first, and **descending** in the opposite case:
+
+```abc show-piano show-octaves title="Example of an ascending and a descending interval"
+M:1/1
+Q:200
+L:1/1
+CE | EC
+```
+
+Even in this case all three properties are the same for both versions.
+
+We'll now see two concepts we'll use to determine the number, quality and size of any interval: the **letter landscape** and **the chromatic landscape**. The former gives us the **number**, the latter the **size**, and with both information will eventually get the **quality**.
+
 ## The letter landscape
 
-The following notion is extremely important and needs all our attention. It will be needed to tell the **interval number** between two notes.
+Let's focus on the first seven letters of the alphabet for a moment. Let's ignore the fact that they coincide with the note names for a moment and let's completely forget about piano keyboards, notes and sounds overall.
 
-Let's focus on the first seven letters of the alphabet for a minute. Let's ignore the fact that they coincide with the note names for a moment, let's completely forget about piano keyboards and sounds overall.
-
-Imagine that they repeat over and over, like:
+Imagine that the letters A-G repeat over and over, like:
 
 ```txt
 A B C D E F G | A B C D E F G | A B C D E F G | ...
@@ -52,7 +88,24 @@ We can deduce the following for instance:
 
 More generally, the distance between any two letters is measured by counting **how many letters are visited from the first to the second both included**, and **minding the repetition of the sequence after the letter G**.
 
-We'll refer to this relationship between letter as the **letter landscape** from now on.
+We'll refer to this relationship between letters as the **letter landscape** from now on.
+
+### Our first exploration together
+
+Let's measure the distance between F and C to see if we got it:
+
+```txt
+A B C D E F G | A B C D E F G
+. . . . . 1 2 | 3 4 5 . . . .
+```
+
+- we start counting from F (1);
+- we walk up over G (2), A (3), B (4);
+- until we reach C (5).
+
+This might look quite pedantic, but many music students fail to memorize these relationships because they haven't explored the letter landscape properly, and find then hard to follow more advanced lessons because they always have to stop to calculate things.
+
+### Complementary relationships over the landscape
 
 Observe that for any pair of letters L1 and L2, the L1-L2 and L2-L1 distances always sum up to 9. Let's check this for all possible combinations of the letter A:
 
@@ -65,6 +118,13 @@ Observe that for any pair of letters L1 and L2, the L1-L2 and L2-L1 distances al
 | A-F                       | 6        | F-A          | 3        | 6 + 3 = 9 |
 | A-G                       | 7        | G-A          | 2        | 7 + 2 = 9 |
 | A-A (after seven letters) | 8        | A-A (itself) | 1        | 8 + 1 = 9 |
+
+Start getting familiar with these pairs then, because we'll encounter them pretty often:
+
+- 1 and 8;
+- 2 and 7;
+- 3 and 6;
+- 4 and 5.
 
 Being able to associate a number between 2 and 8 to any pair of letters between A and G without blinking is paramount in dealing with intervals.
 
@@ -114,7 +174,7 @@ I am sure you hit four out of four, aces!
 
 Now that we have got the first ingredient, we can say again _musica, maestro_!
 
-Let's walk up the piano keyboard from the middle C (C4) up to the next C (C5), by playing all consecutive notes, white and black:
+Let's walk up the piano keyboard from the middle C (C4) up to the next C (C5), by playing all consecutive keys, white and black:
 
 ```abc show-piano show-octaves title="The chromatic scale"
 M:1/1
@@ -124,7 +184,9 @@ C^CD^DEF^FG^GA^ABc
 w: 1 2 3 4 5 6 7 8 9 10 11 12 (13)
 ```
 
-This is called the **chromatic scale**. Let's ignore the score notation for now and let's count for instance how many keys do we need to press in order to go from D to G, **D excluded**:
+This is called the **chromatic scale**.
+
+Let's count how many keys do we need to press to reach G from D, **D excluded**:
 
 ```abc show-piano show-octaves title="Walking up the chromatic scale from D to G"
 M:1/1
@@ -134,7 +196,49 @@ D^DEF^FG
 w: (0) 1 2 3 4 5
 ```
 
-We said to exclude D so D#, E, F, F#, G: five! But five what? Centimeters, seconds, apples, smiles? Good question, let's give it an answer.
+We said to exclude D so D# (1), E (2), F (3), F# (4), G (5): five!
+
+<div class="text-note">
+
+### A note on enharmonics
+
+The (ascending) chromatic scale is usually represented just with sharp signs. What about flats?
+
+```abc show-piano show-octaves title="The chromatic scale with flat signs"
+M:1/1
+Q:200
+L:1/1
+C_D=D_E=EF_G=G_A=A_B=Bc
+w: 1 2 3 4 5 6 7 8 9 10 11 12 (13)
+```
+
+See how we have to prepend a natural sign before each note coming after its flatted version. Now you know why sharps are preferred! But being aware of this **dual representation** is important and helpful at the beginning of your navigation of the chromatic landscape.
+
+Let's measure the distance between C and Eb for example:
+
+```abc show-piano show-octaves title="Walking up the chromatic scale from C to Eb"
+M:1/1
+Q:200
+L:1/1
+C_D=D_E
+w: (0) 1 2 3
+```
+
+Observe how it coincides with that between C and D#:
+
+```abc show-piano show-octaves title="Walking up the chromatic scale from C to Eb"
+M:1/1
+Q:200
+L:1/1
+C^CD^D
+w: (0) 1 2 3
+```
+
+That's because the notes D# and Eb **are represented by the same key on the keyboard**.
+
+</div>
+
+We said that the distance between D and G over the chromatic landscape if five, but five what? Centimeters, seconds, apples, smiles? Good question, let's give it an answer.
 
 ## Semitones and whole tones
 
@@ -147,7 +251,7 @@ L:1/1
 EF
 ```
 
-This distance is called **the semitone**, and it's the smallest possible one can find on a keyboard.
+E (0) to F(1), **one**. This distance is called **the semitone**, the smallest possible on a keyboard.
 
 There is a semitone of distance between any pair of consecutive keys of the piano, regardless of the key color:
 
@@ -221,86 +325,8 @@ Can you tell the _size_ of the following intervals?
 
 </div>
 
-## The interval of an octave
+## Conclusion
 
-We are already friends with this pair of notes:
+WIP
 
-```abc show-piano show-octaves title="Interval between C4 and C5"
-M:1/1
-Q:200
-L:1/1
-Cc
-```
-
-_Soooome-wheeeere_...exactly! You recognized the opening line of the [beautiful Wizard of Oz song][song:somewhere-over-the-rainbow]. But we still have to talk a bit before boring things before going back to the fun parts.
-
-[We have already seen how instrument notes contain frequencies of other notes][course:the-harmonic-series], and more specific how the relationship between notes with the same fundamental frequency is called the octave relationship. In the example above, we say that there is **an interval of an octave** between C4 and C5.
-
-Since we know what semitones and tones are, we can measure the octave interval by counting how many consecutive keys we need to press _after_ C4 until we reach C5. Twelve!
-
-The following observations can thus be made:
-
-- between any two notes 12 keys apart there is an interval of an octave;
-- the octave interval is made of 12 semitones (or 6 tones if you prefer);
-- the distance between any two consecutive keys (regardless of the color) is one semitone;
-- any octave interval on the piano keyboard will hit seven white keys and five black keys.
-
-Going back to the letter landscape, what's the distance between a letter and the next one with the same name? Eight exactly, hence octave! In fact C(5) is the eight letter after C(4):
-
-```txt
-A B C D E F G | A B C D E F G | A B C D E F G | ...
-. . ^ . . . . | . . ^ . . . . | . . . . . . . |
-    1 2 3 4 5 | 6 7 8
-```
-
-We say that the **number** of the C4 to C5 interval is **8** (octave), and its **size** is 12. What about the **interval quality**? We'll trace it back after the next interval, stay in tune.
-
-<div class="text-note">
-
-### Why twelve keys in an octave?
-
-This is actually a very good question but we cannot have worms for dinner tonight, at least not yet.
-
-It's extremely important to know for now that the piano keyboard layout is just **one of the possible ways to divide the octave**, and is called the [equal temperament][wiki:equal-temperament].
-
-While the octave is an intrinsic relationship of the vibration phenomenon, its subdivision in portion to achieve good sounding notes is a **human arbitrary operation**, and [there have been countless of them throughout history and cultures][wiki:musical-tuning].
-
-Your voice can for instance sing _infinite pitches_ between any to notes, try it yourself by mimicking the sound of an engine when shifting gears! But infinite keys on a piano would be quite impractical to build so manufacturers settled for the current (even though [there are alternative layouts][wiki:isomorphic-keyboard]).
-
-TL;DR the music predates the piano by quite a few millennia, so be open to explore the musical landscape not just in terms of distances between white and black keys or positions on the music staff.
-
-</div>
-
-## The interval of a third
-
-Ears open again:
-
-```abc show-piano show-octaves title="Interval between C4 and E4"
-M:1/1
-Q:200
-L:1/1
-CE
-```
-
-We can already tell the interval number and size:
-
-- For the **number** we explore the **letter landscape**: C, D E, **3**;
-- For the **size** we explore the **chromatic landscape**: (C), C#, D, D#, E, **4**.
-
-## The interval of a fifth
-
-We have already encountered this interval after the octave while exploring the harmonic series:
-
-```abc show-piano show-octaves title="Interval between C4 and G4"
-M:1/1
-Q:200
-L:1/1
-CG
-```
-
-[course:the-major-scale]: /course/the-major-scale
-[course:the-harmonic-series]: /course/the-harmonic-series
-[song:somewhere-over-the-rainbow]: https://www.youtube.com/watch?v=PSZxmZmBfnU
-[wiki:equal-temperament]: https://en.wikipedia.org/wiki/Equal_temperament
-[wiki:isomorphic-keyboard]: https://en.wikipedia.org/wiki/Isomorphic_keyboard
-[wiki:musical-tuning]: https://en.wikipedia.org/wiki/Musical_tuning#Tuning_systems
+[course:introduction-to-music-notation]: /course/introduction-to-music-notation

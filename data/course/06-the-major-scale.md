@@ -4,7 +4,6 @@ index: 6
 id: the-major-scale
 slug: course/the-major-scale
 title: The major scale
-date: 2026-02-01
 description: The major scale has a central importance in a vast area of the musical landscape. We'll hear how it sounds and be able to recognize it in the music we love.
 cover:
   id: kazimir-malevich-argentine-polka

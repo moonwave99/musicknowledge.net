@@ -3,9 +3,11 @@
     <div class="content">
       <header>
         <h1>{{title}}</h1>
+        {{#date}}
         <p>
-          <time datetime="{{formatDate date=date format="timestamp"}}">{{ formatDate date=date format="short" }}</time>
+          <time datetime="{{formatDate date=. format="timestamp"}}">{{ formatDate date=. format="short" }}</time>
         </p>
+        {{/date}}
         {{#cover}}
           {{> course/cover }}
         {{/cover}}

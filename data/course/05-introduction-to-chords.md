@@ -4,7 +4,6 @@ index: 5
 id: introduction-to-chords
 slug: course/introduction-to-chords
 title: Introduction to chords
-date: 2026-11-01
 description: What's more beautiful than a voice singing? More voices singing together!
 cover:
   id: henry_matisse_musique

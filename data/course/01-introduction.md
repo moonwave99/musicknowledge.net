@@ -4,7 +4,6 @@ index: 1
 id: introduction
 slug: course/introduction
 title: Introduction to the course
-date: 2026-02-01
 cover:
   id: gustav-klimt-musik
   caption: Gustav Klimt, Musik
