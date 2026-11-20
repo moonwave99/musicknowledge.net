@@ -107,6 +107,10 @@
         }
       }
 
+      .table-wrapper {
+        overflow-x: auto;
+      }
+
       table {
         border-collapse: collapse;
         border-spacing: 0;
@@ -180,6 +184,7 @@ pre {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background-color: color-mix(in srgb, var(--accent-color), white 90%);
   padding: 1rem;
+  overflow-x: auto;
   code {
     display: block;
   }
@@ -224,16 +229,11 @@ pre {
     }
     .staff-wrapper {
       padding: 0 1rem;
+      .staff {
+        overflow-x: auto !important;
+      }
       @media screen and (max-width: 640px) {
         padding: 0 0.5rem;
-        .staff {
-          overflow-x: auto !important;
-        }
-      }
-      @media screen and (max-width: 768px) {
-        .staff {
-          overflow-x: auto !important;
-        }
       }
     }
     header {

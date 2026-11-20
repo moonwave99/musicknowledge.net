@@ -7,6 +7,12 @@ import {
 } from "@music-ui/core";
 
 window.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("table").forEach((el) => {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("table-wrapper");
+    el.parentNode.insertBefore(wrapper, el);
+    wrapper.appendChild(el);
+  });
   document.querySelectorAll("[data-piano]").forEach(initPiano);
   const selection = document.querySelectorAll("[data-abc]");
   if (!selection.length) {
