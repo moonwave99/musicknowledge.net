@@ -102,6 +102,47 @@ L:1/1
 DA | EB | _B, F | Ae
 ```
 
+Like third intervals, the fifths are always **line-line** or **space-space** on the staff.
+
+<div class="text-note">
+
+### The fifth as second building block of the triads
+
+[We have already briefly encountered the C major triad][course:thirds-as-the-harmony-building-block]:
+
+```abc show-piano show-octaves title="The C major triad"
+M:1/1
+Q:200
+L:1/1
+[CEG]
+```
+
+If we consider the intervals from the **root note of the triad** (C in this case), we have:
+
+```abc show-piano show-octaves title="Intervals from the root of the C major triad"
+M:1/1
+Q:200
+L:1/1
+[CE] | [CG]
+```
+
+I.e. a major third (C-E) and a perfect fifth (C-G).
+
+Let's look at the **C minor** triad and its intervals now:
+
+```abc show-piano show-octaves title="The C minor triad"
+M:1/1
+Q:200
+L:1/1
+[C_EG] | C_E | CG
+```
+
+The C-Eb interval is **a minor third** (hence the name C minor), while the outer interval is a perfect fifth (C-G) like in C major.
+
+Perfect fifths appear in every major and minor chord. We'll see how they don't define the chord character like the third does, but they reinforce the sound of the root because of the strong consonance with it.
+
+</div>
+
 ## Interval of a fourth
 
 We have already seen what an inverted interval is. What is the inverted of C(4)-G(4)? G(4)-C(5):
@@ -110,7 +151,7 @@ We have already seen what an inverted interval is. What is the inverted of C(4)-
 M:1/1
 Q:200
 L:1/1
-GC
+Gc
 ```
 
 Landscape exploration:
@@ -118,7 +159,7 @@ Landscape exploration:
 - **interval number**: G, A, B, D, C: **4**/**fourth**;
 - **interval size**: (G), G#, A, A#, B, C: **5**.
 
-The **quality** of this interval is again **perfect**.
+The **quality** of this interval is again **perfect**, so G-C is a perfect fourth.
 
 ## Inverting perfect intervals
 
@@ -161,6 +202,8 @@ Now that we have seen **all possible interval numbers in the range of one octave
 | **perfect fourth**        | **perfect fifth**        | C-F                | F-C                |
 | **perfect fifth**         | **perfect fourth**       | D-A                | A-D                |
 
+We can resume the table above to the following statements:
+
 - perfect fourths flip to perfect fifths and viceversa;
 - seconds flip to sevenths and flip the quality, and viceversa;
 - thirds flip to sixths and flip the quality, and viceversa.
@@ -183,6 +226,7 @@ WIP
 WIP
 
 [course:major-and-minor-intervals]: /course/major-and-minor-intervals
+[course:thirds-as-the-harmony-building-block]: /course/major-and-minor-intervals#thirds-as-the-harmony-building-block
 [course:the-harmonic-series]: /course/the-harmonic-series
 [song:somewhere-over-the-rainbow]: https://www.youtube.com/watch?v=PSZxmZmBfnU
 [wiki:equal-temperament]: https://en.wikipedia.org/wiki/Equal_temperament

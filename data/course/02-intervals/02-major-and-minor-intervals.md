@@ -144,6 +144,8 @@ L:1/1
 A,C | CE | fa | ac' || B,D | DF | eg | gb
 ```
 
+<div class="text-note">
+
 ### Thirds as the harmony building block
 
 So far we have considered just melodic, ascending intervals. Thirds are especially important for their harmonic value:
@@ -183,6 +185,8 @@ They sound so cool! The chords are respectively **C augmented**, **C major**, **
 
 We'll go into detail as soon as we reach the **chords module of the course**.
 
+</div>
+
 ## Intervals of a sixth
 
 We know about [inverted interval][course:inverted-intervals] already, so let's invert the C-E interval:
@@ -219,6 +223,17 @@ We still have a sixth, but greater this time. So E-C# is a **major sixth** and E
 | ---- | --- | ---------------- | --------------- | ------------- |
 | E    | C#  | **major**        | sixth           | **9**         |
 | E    | C   | **minor**        | sixth           | **8**         |
+
+Like third intervals, sixths sound great in a row:
+
+```abc show-piano show-octaves title="A sequence of sixth intervals"
+M:1/1
+Q:200
+L:1/1
+[Ec] | [Fd] | [Ge] | [Af] | [Bg] [ca]
+```
+
+On the staff: if they start on a line they end on a space, and the other way around.
 
 ## Intervals of a second
 

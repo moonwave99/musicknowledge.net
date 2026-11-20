@@ -117,11 +117,55 @@ WIP
 
 ## Shrinking minor intervals
 
-WIP
+This scenario is on the other hand quite unusual. An example is the following:
+
+```abc show-piano show-octaves title="An E full diminished chord and its intervals from the root"
+M:1/1
+Q:200
+L:1/1
+[EG_B_d] || E G | E_B | E_d
+```
+
+This is a E full diminished chord, whose intervals from the root are:
+
+- **minor third** (E-G);
+- **diminished fifth** (E-Bb);
+- **diminished seventh** (E-Db);
+
+Wouldn't E-Dbb be rather better spelled as E-C#? Most of the time, but to keep it built as a seventh chord we need some kind of seventh interval from the root.
+
+We say that E-Db is **enharmonic equivalent** to the E-C# **major sixth** interval.
 
 ## Inverting augmented and diminished intervals
 
-WIP
+Let's see what happens when we invert an augmented interval:
+
+```abc show-piano show-octaves title="An augmented fifth interval and its inverse"
+M:1/1
+Q:200
+L:1/1
+C^G | ^G c
+```
+
+From C-G# we get G#-C, what kind of interval it is? Since we are already good with intervals, we can make all the following considerations:
+
+- C-G is a perfect fifth, so its inverse (G-C) is a perfect fourth;
+- G#-C must be a fourth of some kind as well, because the letter landscape does not take accidentals into account;
+- the lower note of the interval is being raised, so the interval shrinks by one semitone;
+- when we shrink a perfect fourth we get a **diminished fourth**.
+
+Let's flip a diminished fifth now:
+
+```abc show-piano show-octaves title="A diminished fifth interval and its inverse"
+M:1/1
+Q:200
+L:1/1
+E_B | _Be
+```
+
+I leave to you to check that Bb-E is **an augmented fourth**.
+
+In general, augmented and diminished intervals **flip the quality to the opposite kind** when inverted, besides changing number to their complement to nine (2 to 7, 3 to 6, 4 to 5...).
 
 ## Conclusion
 

@@ -33,7 +33,7 @@ We'll discuss the possible interval qualities and the size determination process
 
 An interval is **melodic** if the notes are played in sequence, and **harmonic** if they are played together. Both share the same interval, quality and size.
 
-```abc show-piano show-octaves title="Example of an a melodic and an harmonic interval"
+```abc show-piano show-octaves title="Example of a melodic and an harmonic interval"
 M:1/1
 Q:200
 L:1/1
@@ -54,6 +54,28 @@ CE | EC
 Even in this case all three properties are the same for both versions.
 
 We'll now see two concepts we'll use to determine the number, quality and size of any interval: the **letter landscape** and **the chromatic landscape**. The former gives us the **number**, the latter the **size**, and with both information will eventually get the **quality**.
+
+### Simple vs. compound intervals
+
+An interval is **simple** if its size doesn't exceed the octave, and **compound** otherwise:
+
+```abc show-piano show-octaves title="Example of a simple and a compound interval"
+M:1/1
+Q:200
+L:1/1
+CE | Cd
+```
+
+The first interval (C4-E4) is contained in the fourth octave, while the second (C4-D5) exceeds its.
+
+A compound interval can always be split in an octave plus a simple interval, for instance:
+
+```abc show-piano show-octaves title="A compound interval split into an octave and a simple interval"
+M:1/1
+Q:200
+L:1/1
+Cd || Cc | cd
+```
 
 ### Sum of intervals
 
