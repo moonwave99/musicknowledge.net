@@ -15,6 +15,21 @@ In the [previous lesson][course:introduction-to-music-notation] we got acquainte
 
 Before moving on with scales, chords and progressions, we need a map to better explore the note territory. Since music is mainly made by notes played together with or followed by other notes (percussive elements aside!), we must know how to categorize the distances between them.
 
+## Some beautiful music first
+
+Let's appreciate the opening of [Waltz B.150 in A minor by F. Chopin][song:waltz-in-a-minor-chopin]:
+
+```abc show-piano show-octaves title="Extract from Waltz B.150 in A minor, F. Chopin"
+M:3/4
+Q:80
+L:1/8
+z4 (E2 | ABc2) c2 | (def4) | (Bcdagf) | {ef}(e^de4) ||
+```
+
+The melody is so simple yet so sentimental and moving, it sets the mood for the whole piece. There is a jump between the first two notes (E4 to A4), then a bar of consecutive notes (A4, B4, C5). In bar four we have another consecutive run followed by a descending one, separated again by a jump.
+
+These are qualitative considerations: _consecutive runs_, _jumps_. The study of **intervals** will help us make them quantitative instead and easily portable to the instrumental and vocal ground.
+
 ## Definition and properties of an interval
 
 An interval is **the difference in pitch between two sounds**. If the two sound in questions are notes of a music scale, we can determine the interval **number**, **quality** and **size**.
@@ -395,3 +410,4 @@ Remember that the ultimate goal of interval study is knowing every possible note
 WIP
 
 [course:introduction-to-music-notation]: /course/introduction-to-music-notation
+[song:waltz-in-a-minor-chopin]: https://www.youtube.com/watch?v=7BSseiHft7E
