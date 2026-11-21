@@ -13,9 +13,9 @@ cover:
 
 We have seen that some intervals may change quality when shrinking or enlarging, namely seconds, thirds, sixths and sevenths. What happens if we do the same to perfect intervals?
 
-## Enlarging fifths and fourths
+## Enlarging perfect intervals
 
-Let's take our favorite perfect fifth, C to G, and let's raise the G by a semitone by sharpening it:
+Let's take our favorite perfect fifth, C to G, and let's raise the G by a semitone:
 
 ```abc show-piano show-octaves title="Interval between C4 and G4, and between C4 and G#4"
 M:1/1
@@ -37,7 +37,7 @@ EA | E^A
 
 From E to A# we have a fourth of **six semitones** now, the **augmented fourth**. This interval size is very very important, we'll go back to it in a minor second.
 
-## Shrinking fifths and fourths
+## Shrinking perfect intervals
 
 Let's make things smaller now:
 
@@ -61,9 +61,9 @@ C^F | C_G
 
 (If this sounds to you like the end of the initial riff of Master of Puppets, the answer is yes)
 
-We have already seen that intervals of different number and quality may have the same size. This is the most important example, her majesty **the tritone**! No, it has nothing to do neither with the sea depths nor with the devil, it is so called because of its size of six semitones or three tones.
+We have already seen that intervals of different number and quality may have the same size. This is the most important example, her majesty **the tritone**! No, it has nothing to do neither with the sea depths creatures nor with the devil, it is so called because of its size of **six semitones** or **three tones**, hence the namesake.
 
-We haven't discussed interval dissonance or consonance yet. The tritone is a dissonant one and appears inside melodies and chords. It's important to know that it may appear as an augmented fourth or as a diminished fifth.
+We haven't discussed interval dissonance or consonance yet. The tritone is a dissonant one and appears inside melodies and chords. It's important to know that it may appear as either an augmented fourth or as a diminished fifth.
 
 ## Enlarging major intervals
 
@@ -77,6 +77,8 @@ FG | F^G
 ```
 
 If we widen a major second (F-G, two semitones) we get **an augmented second** (F-G#, three semitones).
+
+Remember that enlarging a minor interval we get its corresponding major version, e.g. C-Eb becomes C-E.
 
 <aside>
 
@@ -119,22 +121,22 @@ WIP
 
 This scenario is on the other hand quite unusual. An example is the following:
 
-```abc show-piano show-octaves title="An E full diminished chord and its intervals from the root"
+```abc show-piano show-octaves title="A C full diminished chord and its intervals from the root"
 M:1/1
 Q:200
 L:1/1
-[EG_B_d] || E G | E_B | E_d
+[C_E_G__B] || C_E | C_G | C__B
 ```
 
-This is a E full diminished chord, whose intervals from the root are:
+This is a C full diminished chord, whose intervals from the root are:
 
-- **minor third** (E-G);
-- **diminished fifth** (E-Bb);
-- **diminished seventh** (E-Db);
+- **minor third** (C-Eb);
+- **diminished fifth** (C-Gb);
+- **diminished seventh** (C-Bbb);
 
-Wouldn't E-Dbb be rather better spelled as E-C#? Most of the time, but to keep it built as a seventh chord we need some kind of seventh interval from the root.
+Wouldn't C-Bbb be rather better spelled as C-A? Most of the time, but to keep it built as a seventh chord we need some kind of seventh interval from the root, which implies a C-B distance on the letter landscape.
 
-We say that E-Db is **enharmonic equivalent** to the E-C# **major sixth** interval.
+We say that C-Bbb is **enharmonic equivalent** to the C-A **major sixth** interval.
 
 ## Inverting augmented and diminished intervals
 
@@ -149,7 +151,7 @@ C^G | ^G c
 
 From C-G# we get G#-C, what kind of interval it is? Since we are already good with intervals, we can make all the following considerations:
 
-- C-G is a perfect fifth, so its inverse (G-C) is a perfect fourth;
+- C-G is a **perfect fifth**, so its inverse (G-C) is a **perfect fourth**;
 - G#-C must be a fourth of some kind as well, because the letter landscape does not take accidentals into account;
 - the lower note of the interval is being raised, so the interval shrinks by one semitone;
 - when we shrink a perfect fourth we get a **diminished fourth**.
@@ -169,7 +171,7 @@ In general, augmented and diminished intervals **flip the quality to the opposit
 
 ## Conclusion
 
-WIP
+Now we have the full interval quality picture: **major**, **minor**, **perfect**, **diminished** and **augmented**. We know how to write and read them on the staff, and we are developing an ear for how they sound. A thorough review of all the interval journey waits for us in the last lesson of this module, but not before going through the exercise section below: good work!
 
 ## Exercises
 

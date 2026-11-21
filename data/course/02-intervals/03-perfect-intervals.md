@@ -204,9 +204,11 @@ Now that we have seen **all possible interval numbers in the range of one octave
 
 We can resume the table above to the following statements:
 
-- perfect fourths flip to perfect fifths and viceversa;
-- seconds flip to sevenths and flip the quality, and viceversa;
-- thirds flip to sixths and flip the quality, and viceversa.
+- **perfect fourths** flip to **perfect fifths** and viceversa;
+- **seconds** flip to **sevenths** and **flip the quality**, and viceversa;
+- **thirds** flip to **sixths** and **flip the quality**, and viceversa.
+
+(Yes, technically unisons flip to octaves and viceversa).
 
 Observe how the interval number and its inverse number **always sum up to 9**:
 
@@ -215,11 +217,11 @@ Observe how the interval number and its inverse number **always sum up to 9**:
 - 3 + 6 = 9;
 - 4 + 5 = 9.
 
-And viceversa because addition is commutative.
+And viceversa, thanks to the commutative property.
 
 ## Conclusion
 
-WIP
+We introduced a new fundamental quality, the **perfect intervals**, and we have seen how each interval number behaves under inversion. [In the next lesson][course:augmented-and-diminished-intervals] we'll see what happens if we enlarge or shrink certain intervals.
 
 ## Exercises
 
@@ -228,6 +230,7 @@ WIP
 [course:major-and-minor-intervals]: /course/major-and-minor-intervals
 [course:thirds-as-the-harmony-building-block]: /course/major-and-minor-intervals#thirds-as-the-harmony-building-block
 [course:the-harmonic-series]: /course/the-harmonic-series
+[course:augmented-and-diminished-intervals]: /course/augmented-and-diminished-intervals
 [song:somewhere-over-the-rainbow]: https://www.youtube.com/watch?v=PSZxmZmBfnU
 [wiki:equal-temperament]: https://en.wikipedia.org/wiki/Equal_temperament
 [wiki:isomorphic-keyboard]: https://en.wikipedia.org/wiki/Isomorphic_keyboard

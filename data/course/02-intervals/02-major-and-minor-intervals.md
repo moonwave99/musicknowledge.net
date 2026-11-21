@@ -38,25 +38,9 @@ L:1/1
 C_E
 ```
 
-We know how to navigate the letter landscape, but we haven't found any flat or sharp sign in it yet. Now it's time to introduce the following rule:
+[Since we ignore accidentals when exploring the letter landscape][course:actual-use-of-the-letter-landscape], C-Eb must also be a third. How can we discern them? We look at the **size**: C-E has 4 semitones, C-Eb has 3.
 
-**We discard any accidental sign when finding the interval number over the letter landscape**.
-
-For example:
-
-- D to G;
-- D to G#;
-- Db to G#;
-- D# to Gb.
-
-And all other possible D and G altered combinations have interval number four.
-
-Coming back to C-Eb, we drop the flat: C-E, interval number 3/third.  
-But the C-Eb and C-E distances over the chromatic landscape differs, 3 vs. 4.
-
-That's a problem that musicians already faced quite some centuries ago, and decided to call these two intervals **the major third** (C-E) and **the minor third** (C-Eb).
-
-Catching up:
+We call C-E a **major third** and C-Eb a **minor third**. Catching up:
 
 | From | To  | Interval quality | Interval number | Interval size |
 | ---- | --- | ---------------- | --------------- | ------------- |
@@ -143,6 +127,39 @@ Q:200
 L:1/1
 A,C | CE | fa | ac' || B,D | DF | eg | gb
 ```
+
+### Manipulating thirds
+
+This applies to all intervals, but this is the first species we are seeing in details and earns the privilege of being used as example. Let's take the E-G interval, what kind of third it is again? Minor, exactly. What happens if we sharpen the G?
+
+```abc show-piano show-octaves title="The E4-G4 and E4-G#4 intervals"
+M:1/1
+Q:200
+L:1/1
+EG | E^G
+```
+
+Once again, see how both intervals look like a third on the staff (line to line). Raising the second note of the interval makes it one semitone wider, so we go from minor third (E-G) to major third (E-G#). Check the sound!
+
+The same happens if we flatten the first note of the interval:
+
+```abc show-piano show-octaves title="The E4-G4 and Eb4-G4 intervals"
+M:1/1
+Q:200
+L:1/1
+EG | _EG
+```
+
+We have just seen how to enlarge the E-G interval in two possible directions. You can also shrink intervals of course:
+
+```abc show-piano show-octaves title="Two ways of shrinking the F4-A4 interval"
+M:1/1
+Q:200
+L:1/1
+FA | ^FA | =F_A
+```
+
+We go from a major third (F-A) to two possible minor thirds (F#-A and F-Ab).
 
 <aside>
 
@@ -325,7 +342,7 @@ L:1/1
 Cc | CB
 ```
 
-We can also say that if we "shrink" an octave by one semitone, we get a seventh. Major or minor? Let's shrink the interval further:
+We can also say that if we shrink an octave by one semitone, we get a seventh. Major or minor? Let's shrink the interval further:
 
 ```abc show-piano show-octaves title="The C4-B4 and the C4-Bb4 intervals"
 M:1/1
@@ -454,5 +471,6 @@ WIP
 [course:introduction-to-intervals]: /course/introduction-to-intervals
 [course:inverted-intervals]: /course/introduction-to-intervals#inverted-intervals
 [course:semitones-and-whole-tones]: /course/introduction-to-intervals#semitones-and-whole-tones
+[course:actual-use-of-the-letter-landscape]: /course/introduction-to-intervals#actual-use-of-the-letter-landscape
 [course:perfect-intervals]: /course/perfect-intervals
 [course:augmented-and-diminished-intervals]: /course/augmented-and-diminished-intervals

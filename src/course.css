@@ -25,7 +25,7 @@
         gap: 1rem;
         h1 {
           font-size: var(--title-font-size);
-          line-height: 1;
+          line-height: 1.2;
         }
         time {
           text-transform: uppercase;
