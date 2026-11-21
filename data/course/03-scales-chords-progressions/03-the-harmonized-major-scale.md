@@ -57,7 +57,7 @@ That's the **C major triad**, built on degrees 1, 3 and 5 of the C major scale.
 
 A triad is identified by two terms: **the root note** (_C_ in this case) and the **triad quality** (_major_ in this case). More in detail, we say _major_ because the distance between the first two notes of the chord (C and E) forms an interval of a **major third**, made of **four semitones**. If your interval knowledge is shaky, [you can brush it up here][course:intervals].
 
-<div class="text-note">
+<aside>
 
 ℹ️ **Note**: remember that the notes that form a chord may appear in any order, and even more than once over different octaves.
 
@@ -72,7 +72,7 @@ L:1/1
 
 If the bottom note of the chord is not the root note, we call it **an inversion of the chord**.
 
-</div>
+</aside>
 
 ### The D minor triad
 
@@ -99,11 +99,11 @@ L:1/1
 w: C Dm Em F G Am Bo
 ```
 
-<div class="text-note">
+<aside>
 
 ℹ️ **Extremely important, don't skip this process!** You'll be able to comfortably navigate the note landscape just if you explore it yourself. Don't resort to existing schemas, use them just to check that your wanderings brought you to the right places.
 
-</div>
+</aside>
 
 In a more structured way:
 
@@ -197,11 +197,11 @@ It's already sounding like real music! Observe how the bass makes big leaps betw
 
 Sometimes you don't want big leaps in the bass, some other times you want the upper voice to move wildly. But before breaking the rules, become friend with them!
 
-<div class="text-note">
+<aside>
 
 ℹ️ **Note**: chord inversions take into consideration **the lowest note being played**, and not just one hand. So in the example with the left hand bass we have **all chords in root position**. But it is safe to say that we are playing inversions of A minor and G major **in the right hand alone**. Context matters!
 
-</div>
+</aside>
 
 ## You can (and should) harmonize any key
 

@@ -78,7 +78,7 @@ FG | F^G
 
 If we widen a major second (F-G, two semitones) we get **an augmented second** (F-G#, three semitones).
 
-<div class="text-note">
+<aside>
 
 ### Again a note on enharmonics
 
@@ -113,7 +113,7 @@ We'll see minor scales in the corresponding lesson. For now observe how the **ha
 
 WIP
 
-</div>
+</aside>
 
 ## Shrinking minor intervals
 

@@ -204,7 +204,7 @@ The trick to get it once for all? Seven letters, seven days, one minute a day!
 
 While commuting or jogging, mentally recite for instance _F-G: F, G, two; F-A: F, G, A, three_, and so on, every day starting on a different letter, until they are ingrained forever.
 
-<div class="text-note">
+<aside>
 
 ### Little check before moving on
 
@@ -244,7 +244,7 @@ I am sure you hit four out of four, aces!
 
 </details>
 
-</div>
+</aside>
 
 ## The chromatic landscape
 
@@ -274,7 +274,7 @@ w: (0) 1 2 3 4 5
 
 Ready? D# (1), E (2), F (3), F# (4), G (5): five!
 
-<div class="text-note">
+<aside>
 
 ### A note on enharmonics
 
@@ -312,7 +312,7 @@ w: (0) 1 2 3
 
 That's because the notes D# and Eb **are represented by the same key on the keyboard**.
 
-</div>
+</aside>
 
 We said that the distance between D and G over the chromatic landscape if five, but five what? Centimeters, seconds, apples, smiles? Good question, let's give it an answer.
 
@@ -372,7 +372,7 @@ w: (0) 1 2 3 4 5 | (0) 1 2 3 4 5 6 7
 
 We can also observe that the sizes of the D-G and G-D intervals sum up to 12, like the amount of notes of the whole chromatic scale unsurprisingly.
 
-<div class="text-note">
+<aside>
 
 ### It's check time
 
@@ -399,7 +399,7 @@ Can you tell the **size** of the following intervals?
   (F), F#, G, G#, A, A#, B, C: 7 semitones, or 3 tones and a half
 </details>
 
-</div>
+</aside>
 
 ## Actual use of the letter landscape
 
@@ -424,11 +424,11 @@ Observe how even if all the intervals sound different, the note distance on the 
 
 ## Conclusion
 
-We defined what intervals are and their properties, and visited the letter and chromatic landscapes. We know what semitones and tones are.
+We defined what intervals are and their properties, and visited the letter and chromatic landscapes. We now know what semitones and tones are.
 
-Remember that the ultimate goal of interval study is knowing every possible note pair properties by heart without hesitation. Take all the time of the world to absorb the concepts of this lesson in depth, then start your daily interval drill and you'll be at professional level way before you would expect.
+Remember that the ultimate goal of interval study is to know by heart the relationship of every possible note pair. Take all the time of the world to absorb the concepts of this lesson in depth, then start your daily interval drill and you'll be at professional level way before you would expect.
 
-<div class="text-note">
+<aside>
 
 ### Exercises
 
@@ -458,7 +458,7 @@ Bc  | FA  | ^Ga |
 
 </details>
 
-</div>
+</aside>
 
 [course:introduction-to-music-notation]: /course/introduction-to-music-notation
 [song:waltz-in-a-minor-chopin]: https://www.youtube.com/watch?v=7BSseiHft7E

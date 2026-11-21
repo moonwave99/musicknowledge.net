@@ -46,7 +46,7 @@ A B C D E F G | A B C D E F G
 
 We say that the **number** of the C4 to C5 interval is **8** (octave), and its **size** is 12. What about the **interval quality**? We'll trace it back by the end of the lesson, stay in tune.
 
-<div class="text-note">
+<aside>
 
 ### Why twelve keys in an octave?
 
@@ -60,7 +60,7 @@ Your voice can for instance sing _infinite pitches_ between any to notes, try it
 
 TL;DR the music predates the piano by quite a few millennia, so be open to explore the musical landscape not just in terms of distances between white and black keys or positions on the music staff.
 
-</div>
+</aside>
 
 ## The unison
 
@@ -104,7 +104,7 @@ DA | EB | _B, F | Ae
 
 Like third intervals, the fifths are always **line-line** or **space-space** on the staff.
 
-<div class="text-note">
+<aside>
 
 ### The fifth as second building block of the triads
 
@@ -141,7 +141,7 @@ The C-Eb interval is **a minor third** (hence the name C minor), while the outer
 
 Perfect fifths appear in every major and minor chord. We'll see how they don't define the chord character like the third does, but they reinforce the sound of the root because of the strong consonance with it.
 
-</div>
+</aside>
 
 ## Interval of a fourth
 

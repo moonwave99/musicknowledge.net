@@ -87,7 +87,7 @@
           }
         }
 
-        .text-note {
+        aside {
           display: flex;
           flex-direction: column;
           gap: 1rem;

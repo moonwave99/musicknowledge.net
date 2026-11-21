@@ -60,13 +60,13 @@ Just the white keys again, more precisely we listened to:
 
 The full sequence before is called **the C major scale**.
 
-<div class="text-note">
+<aside>
 
 ℹ️ **Note**: we are about to introduce many concepts that can be new to you: note names, scales, intervals. You are not required to get everything right on the first attempt.
 
 Absorb what you can but most important: listen, play, have fun and come back again to the text after you have more practice!
 
-</div>
+</aside>
 
 ## The piano layout
 

@@ -74,7 +74,7 @@ L:1/1
 CE | C_E
 ```
 
-<div class="text-note">
+<aside>
 
 ### Another note on enharmonics
 
@@ -98,7 +98,7 @@ C^D | C_E
 
 This difference matters a lot in specific contexts, and we'll discuss it as soon as we encounter it. For now remember that **the interval size alone is not enough to consider two intervals equivalent**.
 
-</div>
+</aside>
 
 Let's listen to more major and minor thirds:
 
@@ -144,7 +144,7 @@ L:1/1
 A,C | CE | fa | ac' || B,D | DF | eg | gb
 ```
 
-<div class="text-note">
+<aside>
 
 ### Thirds as the harmony building block
 
@@ -185,7 +185,7 @@ They sound so cool! The chords are respectively **C augmented**, **C major**, **
 
 We'll go into detail as soon as we reach the **chords module of the course**.
 
-</div>
+</aside>
 
 ## Intervals of a sixth
 
@@ -279,6 +279,29 @@ L:1/1
 
 </details>
 
+<aside>
+
+### Diatonic vs. chromatic semitone
+
+[When we introduced semitones and tones][course:semitones-and-whole-tones] we didn't know what intervals of a second were yet.
+
+The following distinction is worth noting:
+
+```abc show-piano show-octaves title="Chromatic and diatonic semitones"
+M:1/1
+Q:200
+L:1/1
+C_D | C^C
+```
+
+Although both examples have the sime size and sound the same, the first one is **a minor second** while the second is **an augmented unison** because C-C has number 1 in the letter landscape. We will see what augmented and diminished intervals are [in the corresponding lesson][course:augmented-and-diminished-intervals].
+
+The first is also called a **diatonic semitone** because it goes through different note names, and the second a **chromatic semitone** because it features twice the same note name.
+
+The two intervals have the same size in equal temperament but not in other tuning systems, so it's important to reinforce the idea that intervals that may look alike are indeed different in both function and sound depending on the intonation.
+
+</aside>
+
 ## Intervals of a seventh
 
 There is just one interval number left for this lesson, the **seventh**:
@@ -326,7 +349,7 @@ The seventh interval can spice up any chord. Let's add a B to the C major chord 
 M:1/1
 Q:200
 L:1/1
-[CEG] | [7CEGB]
+[CEG] | [CEGB]
 ```
 
 Jazzy! This is called the **C major seventh chord**, or `Cmaj7` in chord symbol.
@@ -430,4 +453,6 @@ WIP
 
 [course:introduction-to-intervals]: /course/introduction-to-intervals
 [course:inverted-intervals]: /course/introduction-to-intervals#inverted-intervals
+[course:semitones-and-whole-tones]: /course/introduction-to-intervals#semitones-and-whole-tones
 [course:perfect-intervals]: /course/perfect-intervals
+[course:augmented-and-diminished-intervals]: /course/augmented-and-diminished-intervals
