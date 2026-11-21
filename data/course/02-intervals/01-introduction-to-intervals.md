@@ -26,9 +26,9 @@ L:1/8
 z4 (E2 | ABc2) c2 | (def4) | (Bcdagf) | {ef}(e^de4) ||
 ```
 
-The melody is so simple yet so sentimental and moving, it sets the mood for the whole piece. There is a jump between the first two notes (E4 to A4), then a bar of consecutive notes (A4, B4, C5). In bar four we have another consecutive run followed by a descending one, separated again by a jump.
+The melody is so simple yet so sentimental and moving, it sets the mood for the whole piece. There is a leap between the first two notes (E4 to A4), then a bar of consecutive notes (A4, B4, C5). In bar four we have another consecutive run followed by a descending one, separated again by a leap.
 
-These are qualitative considerations: _consecutive runs_, _jumps_. The study of **intervals** will help us make them quantitative instead and easily portable to the instrumental and vocal ground.
+Both the distance between consecutive notes and the size of the leaps are **intervals**.
 
 ## Definition and properties of an interval
 
@@ -67,8 +67,6 @@ CE | EC
 ```
 
 Even in this case all three properties are the same for both versions.
-
-We'll now see two concepts we'll use to determine the number, quality and size of any interval: the **letter landscape** and **the chromatic landscape**. The former gives us the **number**, the latter the **size**, and with both information will eventually get the **quality**.
 
 ### Simple vs. compound intervals
 
@@ -125,9 +123,13 @@ L:1/1
 GB | Bg || DA | Ad || _E F | F _e
 ```
 
+---
+
+We'll now introduce two concepts needed to determine the number, quality and size of any interval: the **letter landscape** and **the chromatic landscape**. The former gives us the **number**, the latter the **size**, and with both information will eventually get the **quality**.
+
 ## The letter landscape
 
-Let's focus on the first seven letters of the alphabet for a moment. Let's ignore the fact that they coincide with the note names for a moment and let's completely forget about piano keyboards, notes and sounds overall.
+Let's focus on the first seven letters of the alphabet for a moment. Let's ignore the fact that they coincide with the note names, let's forget even about the piano, notes and sounds overall.
 
 Imagine that the letters A-G repeat over and over, like:
 
@@ -151,9 +153,9 @@ Let's then measure the possible distance between two letters in the following wa
 
 We can deduce the following for instance:
 
-- consecutive letters have a distance of 2;
-- repeating letters have a distance of 8;
-- the distance between a letter and itself is 1 (and not zero!);
+- consecutive letters have a distance of **2**;
+- repeating letters have a distance of **8**;
+- the distance between a letter and itself is **1** (and not zero!);
 - very important, the relationship is **not symmetric**, e.g. C to A is 6, but A to C is 3!
 
 More generally, the distance between any two letters is measured by counting **how many letters are visited from the first to the second both included**, and **minding the repetition of the sequence after the letter G**.
@@ -399,15 +401,64 @@ Can you tell the **size** of the following intervals?
 
 </div>
 
+## Actual use of the letter landscape
+
+At the beginning of the lesson we said that the letter landscape is used to determine the **interval number**. We explored it intentionally before connecting it to notes to avoid any possible confusion when dealing with **accidentals**.
+
+Now it's time to introduce the following rule:
+
+**We ignore any accidental sign when exploring the letter landscape**.
+
+For instance,the C-F interval has number 4, but also C#-F or C-F#. Again, just letter without symbols are taken into account.
+
+Another example, the following intervals have all number 3:
+
+```abc show-piano show-octaves title="Various thirds"
+M:1/1
+Q:200
+L:1/1
+FA | F_A | F^A | _F=A | ^FA | ^F^A
+```
+
+Observe how even if all the intervals sound different, the note distance on the staff stays the same regardless of the accidental signs: **they are all thirds**. In the next lesson we'll be able to determine their quality.
+
 ## Conclusion
 
 We defined what intervals are and their properties, and visited the letter and chromatic landscapes. We know what semitones and tones are.
 
 Remember that the ultimate goal of interval study is knowing every possible note pair properties by heart without hesitation. Take all the time of the world to absorb the concepts of this lesson in depth, then start your daily interval drill and you'll be at professional level way before you would expect.
 
-## Exercises
+<div class="text-note">
 
-WIP
+### Exercises
+
+Identify the notes, the numbers and the size of the following intervals.
+
+Remember that the accidental symbols should be ignored when determining the interval number.
+
+```abc show-piano show-octaves title="Various thirds"
+M:1/1
+Q:200
+L:1/1
+D^F | _Be | A^f |
+Bc  | FA  | ^Ga |
+```
+
+<details>
+  <summary>Solutions</summary>
+
+| #   | From | To  | Number | Size |
+| --- | ---- | --- | ------ | ---- |
+| 1   | D    | F   | 3      | 4    |
+| 2   | Bb   | E   | 4      | 5    |
+| 3   | A    | F#  | 6      | 9    |
+| 4   | B    | C   | 2      | 1    |
+| 5   | F    | A   | 3      | 4    |
+| 6   | G#   | a   | 7      | 11   |
+
+</details>
+
+</div>
 
 [course:introduction-to-music-notation]: /course/introduction-to-music-notation
 [song:waltz-in-a-minor-chopin]: https://www.youtube.com/watch?v=7BSseiHft7E
