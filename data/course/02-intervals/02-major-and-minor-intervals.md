@@ -464,9 +464,121 @@ That has been quite an interval marathon, but it was worth it. We have seen four
 
 We had a peek about how chords can be built by stacking intervals, and we concluded with some properties of inverted intervals.
 
-## Exercises
+<aside>
 
-WIP
+### Exercises
+
+Identify the notes and the properties following intervals.
+
+```abc show-piano show-octaves title="Various major and minor intervals"
+M:1/1
+Q:200
+L:1/1
+_EG | C#B | A^f |
+D^c  | G_B  | C_A |
+```
+
+<details>
+  <summary>Solutions</summary>
+
+| #   | From | To  | Quality | Number  | Size |
+| --- | ---- | --- | ------- | ------- | ---- |
+| 1   | Eb   | G   | Major   | Third   | 4    |
+| 2   | C#   | B   | Minor   | Seventh | 10   |
+| 3   | A    | F#  | Major   | Sixth   | 9    |
+| 4   | D    | C#  | Major   | Seventh | 11   |
+| 5   | G    | Bb  | Minor   | Third   | 3    |
+| 6   | C    | Ab  | Minor   | Sixth   | 8    |
+
+</details>
+
+---
+
+For every note of the C major scale, write major and minor seconds, thirds, sixths and sevenths based on it.
+
+<details>
+  <summary>Solutions</summary>
+
+| From | To  | Quality | Number  | Size |
+| ---- | --- | ------- | ------- | ---- |
+| C    | D   | Major   | Second  | 2    |
+| C    | Db  | Minor   | Second  | 1    |
+| C    | E   | Major   | Third   | 4    |
+| C    | Eb  | Minor   | Third   | 3    |
+| C    | A   | Major   | Sixth   | 9    |
+| C    | Ab  | Minor   | Sixth   | 8    |
+| C    | B   | Major   | Seventh | 11   |
+| C    | Bb  | Minor   | Seventh | 10   |
+
+| From | To  | Quality | Number  | Size |
+| ---- | --- | ------- | ------- | ---- |
+| D    | E   | Major   | Second  | 2    |
+| D    | Eb  | Minor   | Second  | 1    |
+| D    | F#  | Major   | Third   | 4    |
+| D    | F   | Minor   | Third   | 3    |
+| D    | B   | Major   | Sixth   | 9    |
+| D    | Bb  | Minor   | Sixth   | 8    |
+| D    | C#  | Major   | Seventh | 11   |
+| D    | C   | Minor   | Seventh | 10   |
+
+| From | To  | Quality | Number  | Size |
+| ---- | --- | ------- | ------- | ---- |
+| E    | F#  | Major   | Second  | 2    |
+| E    | F   | Minor   | Second  | 1    |
+| E    | G#  | Major   | Third   | 4    |
+| E    | G   | Minor   | Third   | 3    |
+| E    | C#  | Major   | Sixth   | 9    |
+| E    | C   | Minor   | Sixth   | 8    |
+| E    | D#  | Major   | Seventh | 11   |
+| E    | D   | Minor   | Seventh | 10   |
+
+| From | To  | Quality | Number  | Size |
+| ---- | --- | ------- | ------- | ---- |
+| F    | G   | Major   | Second  | 2    |
+| F    | Gb  | Minor   | Second  | 1    |
+| F    | A   | Major   | Third   | 4    |
+| F    | Ab  | Minor   | Third   | 3    |
+| F    | D   | Major   | Sixth   | 9    |
+| F    | Db  | Minor   | Sixth   | 8    |
+| F    | E   | Major   | Seventh | 11   |
+| F    | Eb  | Minor   | Seventh | 10   |
+
+| From | To  | Quality | Number  | Size |
+| ---- | --- | ------- | ------- | ---- |
+| G    | A   | Major   | Second  | 2    |
+| G    | Ab  | Minor   | Second  | 1    |
+| G    | B   | Major   | Third   | 4    |
+| G    | Bb  | Minor   | Third   | 3    |
+| G    | E   | Major   | Sixth   | 9    |
+| G    | Eb  | Minor   | Sixth   | 8    |
+| G    | F#  | Major   | Seventh | 11   |
+| G    | F   | Minor   | Seventh | 10   |
+
+| From | To  | Quality | Number  | Size |
+| ---- | --- | ------- | ------- | ---- |
+| A    | B   | Major   | Second  | 2    |
+| A    | Bb  | Minor   | Second  | 1    |
+| A    | C#  | Major   | Third   | 4    |
+| A    | C   | Minor   | Third   | 3    |
+| A    | F#  | Major   | Sixth   | 9    |
+| A    | F   | Minor   | Sixth   | 8    |
+| A    | G#  | Major   | Seventh | 11   |
+| A    | G   | Minor   | Seventh | 10   |
+
+| From | To  | Quality | Number  | Size |
+| ---- | --- | ------- | ------- | ---- |
+| B    | C#  | Major   | Second  | 2    |
+| B    | C   | Minor   | Second  | 1    |
+| B    | D#  | Major   | Third   | 4    |
+| B    | D   | Minor   | Third   | 3    |
+| B    | G#  | Major   | Sixth   | 9    |
+| B    | G   | Minor   | Sixth   | 8    |
+| B    | A#  | Major   | Seventh | 11   |
+| B    | A   | Minor   | Seventh | 10   |
+
+</details>
+
+</aside>
 
 [course:introduction-to-intervals]: /course/introduction-to-intervals
 [course:inverted-intervals]: /course/introduction-to-intervals#inverted-intervals

@@ -223,9 +223,89 @@ And viceversa, thanks to the commutative property.
 
 We introduced a new fundamental quality, the **perfect intervals**, and we have seen how each interval number behaves under inversion. [In the next lesson][course:augmented-and-diminished-intervals] we'll see what happens if we enlarge or shrink certain intervals.
 
-## Exercises
+<aside>
 
-WIP
+### Exercises
+
+For every note of the chromatic scale, write the perfect fourths and fifths based on it.  
+Remember the enharmonic equivalents, e.g. C# and Db!
+
+<details>
+  <summary>Solutions</summary>
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| C    | F   | Perfect | Fourth | 5    |
+| C    | G   | Perfect | Fifth  | 7    |
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| C#   | F#  | Perfect | Fourth | 5    |
+| C#   | G#  | Perfect | Fifth  | 7    |
+| Db   | Gb  | Perfect | Fourth | 5    |
+| Db   | Ab  | Perfect | Fifth  | 7    |
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| D    | G   | Perfect | Fourth | 5    |
+| D    | A   | Perfect | Fifth  | 7    |
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| D#   | G#  | Perfect | Fourth | 5    |
+| D#   | A#  | Perfect | Fifth  | 7    |
+| Eb   | Ab  | Perfect | Fourth | 5    |
+| Eb   | Bb  | Perfect | Fifth  | 7    |
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| E    | A   | Perfect | Fourth | 5    |
+| E    | B   | Perfect | Fifth  | 7    |
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| F    | Bb  | Perfect | Fourth | 5    |
+| F    | C   | Perfect | Fifth  | 7    |
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| F#   | B   | Perfect | Fourth | 5    |
+| F#   | C#  | Perfect | Fifth  | 7    |
+| Gb   | Cb  | Perfect | Fourth | 5    |
+| Gb   | Db  | Perfect | Fifth  | 7    |
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| G    | C   | Perfect | Fourth | 5    |
+| G    | D   | Perfect | Fifth  | 7    |
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| G#   | C#  | Perfect | Fourth | 5    |
+| G#   | D#  | Perfect | Fifth  | 7    |
+| Ab   | Db  | Perfect | Fourth | 5    |
+| Ab   | Eb  | Perfect | Fifth  | 7    |
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| A    | D   | Perfect | Fourth | 5    |
+| A    | E   | Perfect | Fifth  | 7    |
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| A#   | D#  | Perfect | Fourth | 5    |
+| A#   | E#  | Perfect | Fifth  | 7    |
+| Bb   | Eb  | Perfect | Fourth | 5    |
+| Bb   | F   | Perfect | Fifth  | 7    |
+
+| From | To  | Quality | Number | Size |
+| ---- | --- | ------- | ------ | ---- |
+| B    | E   | Perfect | Fourth | 5    |
+| B    | F#  | Perfect | Fifth  | 7    |
+
+</details>
+
+</aside>
 
 [course:major-and-minor-intervals]: /course/major-and-minor-intervals
 [course:thirds-as-the-harmony-building-block]: /course/major-and-minor-intervals#thirds-as-the-harmony-building-block

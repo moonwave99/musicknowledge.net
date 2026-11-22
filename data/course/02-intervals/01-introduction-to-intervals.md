@@ -68,6 +68,30 @@ CE | EC
 
 Even in this case all three properties are the same for both versions.
 
+<aside>
+
+ℹ️ **Note**: all of the examples from now on will be **in the ascending form** if no otherwise stated.
+
+It's important to specify the interval direction when describing an actual melody, for example:
+
+```abc show-piano show-octaves title="Minuet in G"
+M:3/4
+Q:100
+K:G
+L:1/8
+d2 GABc | d2 G2 G2 | e2 cdef | g2 G2 G2 |
+```
+
+In this case:
+
+- the melody starts on a D;
+- then it **goes down a fourth** (D-G);
+- it then walks the scale back to the D;
+- then goes back one fourth again;
+- then **jumps up a sixth** (G-E).
+
+</aside>
+
 ### Simple vs. compound intervals
 
 An interval is **simple** if its size doesn't exceed the octave, and **compound** otherwise:
