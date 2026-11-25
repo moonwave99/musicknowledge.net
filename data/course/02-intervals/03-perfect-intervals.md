@@ -221,7 +221,7 @@ And viceversa, thanks to the commutative property.
 
 ## Conclusion
 
-We introduced a new fundamental quality, the **perfect intervals**, and we have seen how each interval number behaves under inversion. [In the next lesson][course:augmented-and-diminished-intervals] we'll see what happens if we enlarge or shrink certain intervals.
+We introduced a new fundamental quality, the **perfect intervals**, and we have seen how each interval number behaves under inversion. [In the next lesson][course:augmented-and-diminished-intervals] we'll see what happens if we enlarge or shrink intervals.
 
 <aside>
 
@@ -309,7 +309,7 @@ Remember the enharmonic equivalents, e.g. C# and Db!
 
 [course:major-and-minor-intervals]: /course/major-and-minor-intervals
 [course:thirds-as-the-harmony-building-block]: /course/major-and-minor-intervals#thirds-as-the-harmony-building-block
-[course:the-harmonic-series]: /course/the-harmonic-series
+[course:the-harmonic-series]: /course/from-sound-to-music#the-harmonic-series
 [course:augmented-and-diminished-intervals]: /course/augmented-and-diminished-intervals
 [song:somewhere-over-the-rainbow]: https://www.youtube.com/watch?v=PSZxmZmBfnU
 [wiki:equal-temperament]: https://en.wikipedia.org/wiki/Equal_temperament
