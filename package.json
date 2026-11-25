@@ -44,6 +44,7 @@
     "@music-ui/abc": "^0.17.2",
     "@music-ui/core": "^0.17.1",
     "@music-ui/fretboard": "^0.17.1",
+    "@music-ui/osc": "^0.17.3",
     "@music-ui/piano": "^0.17.1"
   }
 }

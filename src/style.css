@@ -150,11 +150,13 @@ figure {
   flex-direction: column;
   gap: 0.5rem;
   img {
-    width: 100%;
+    max-width: 100%;
+    align-self: center;
   }
   figcaption {
     font-style: italic;
-    text-align: right;
+    text-align: center;
+    text-wrap: balance;
     line-height: 1.616;
   }
 }

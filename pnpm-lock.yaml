@@ -17,6 +17,9 @@ importers:
       '@music-ui/fretboard':
         specifier: ^0.17.1
         version: 0.17.1
+      '@music-ui/osc':
+        specifier: ^0.17.3
+        version: 0.17.3
       '@music-ui/piano':
         specifier: ^0.17.1
         version: 0.17.1
@@ -268,6 +271,9 @@ packages:
 
   '@music-ui/fretboard@0.17.1':
     resolution: {integrity: sha512-zDJmGVAdYd9lSfJ/2wDiuDpSkmDiz+XgbY5ga8laHJ8HtwgIpTErzzJ0bqgdGTsGs9aijaFZ+Q1TsHn3jUs1Gw==}
+
+  '@music-ui/osc@0.17.3':
+    resolution: {integrity: sha512-m4Ov1C0aQuldTgya6jLZfGcxgxpZm2qW95O3ljdQfJS6gmlgRk3WOlqFDoAq6VSo/bLR41ycSnBmpW7ZRe12Nw==}
 
   '@music-ui/piano@0.17.1':
     resolution: {integrity: sha512-uCWOWnCjHgDJSqb3outuJJqm3xBBRwUA18xljTRDrmm1UwvKmdA0A5zqok50hBD1zijWEizhvA9pq62u2dz92Q==}
@@ -1987,6 +1993,13 @@ snapshots:
       '@tonaljs/note': 4.12.1
       '@tonaljs/scale': 4.13.4
       d3-selection: 3.0.0
+    transitivePeerDependencies:
+      - babel-plugin-macros
+
+  '@music-ui/osc@0.17.3':
+    dependencies:
+      '@music-ui/core': 0.17.1
+      events: 3.3.0
     transitivePeerDependencies:
       - babel-plugin-macros
 

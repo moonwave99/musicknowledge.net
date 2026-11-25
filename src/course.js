@@ -1,18 +1,16 @@
 import { initABCScoreWithPlayer } from "@music-ui/abc";
 import { Piano } from "@music-ui/piano";
-import {
-  playerFactory,
-  getAbcScore,
-  extractElementOptions,
-} from "@music-ui/core";
+import { playerFactory, extractElementOptions } from "@music-ui/core";
+import { initOscillator, OscPlayer } from "@music-ui/osc";
+const oscPlayer = new OscPlayer({ context: new AudioContext() });
 
 window.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("table").forEach((el) => {
-    const wrapper = document.createElement("div");
-    wrapper.classList.add("table-wrapper");
-    el.parentNode.insertBefore(wrapper, el);
-    wrapper.appendChild(el);
+  document.querySelectorAll("table").forEach(initTable);
+  initOscillator({
+    player: oscPlayer,
+    selection: "[data-oscillator]",
   });
+
   document.querySelectorAll("[data-piano]").forEach(initPiano);
   const selection = document.querySelectorAll("[data-abc]");
   if (!selection.length) {
@@ -33,6 +31,13 @@ window.addEventListener("DOMContentLoaded", () => {
     el.querySelector("figcaption").innerHTML = title;
   });
 });
+
+function initTable(el) {
+  const wrapper = document.createElement("div");
+  wrapper.classList.add("table-wrapper");
+  el.parentNode.insertBefore(wrapper, el);
+  wrapper.appendChild(el);
+}
 
 const DEFAULT_PIANO_OPTIONS = {
   octaves: 5,
