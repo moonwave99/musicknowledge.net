@@ -16,6 +16,11 @@ window.addEventListener("DOMContentLoaded", () => {
       player: oscPlayer,
       selection,
     });
+    selection.querySelectorAll("button").forEach((button) => {
+      button.innerHTML = `
+        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" fill="currentColor"></polygon></svg>
+      `;
+    });
   });
 
   document.querySelectorAll("[data-piano]").forEach(initPiano);

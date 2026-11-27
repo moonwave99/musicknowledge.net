@@ -68,10 +68,31 @@
             .value {
               font-size: 1.25rem;
               font-weight: bold;
+              &::after {
+                content: "Hz";
+                font-size: 0.8rem;
+                font-weight: normal;
+              }
             }
             .controls {
               button {
-                padding: 0.25rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                border-radius: 50%;
+                border: 1.5px solid var(--text-color);
+                width: 2rem;
+                height: 2rem;
+                transition: scale 0.1s ease-in-out;
+                color: var(--text-color);
+                &:hover {
+                  scale: 1.1;
+                }
+                svg {
+                  width: 1rem;
+                  height: 1rem;
+                }
               }
             }
           }
