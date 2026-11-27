@@ -1,14 +1,21 @@
 import { initABCScoreWithPlayer } from "@music-ui/abc";
 import { Piano } from "@music-ui/piano";
 import { playerFactory, extractElementOptions } from "@music-ui/core";
-import { initOscillator, OscPlayer } from "@music-ui/osc";
-const oscPlayer = new OscPlayer({ context: new AudioContext() });
+import { initOscillatorWithOscilloscope, OscPlayer } from "@music-ui/osc";
 
 window.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("table").forEach(initTable);
-  initOscillator({
-    player: oscPlayer,
-    selection: "[data-oscillator]",
+  document.querySelectorAll(".oscillator-widget").forEach((selection) => {
+    const context = new AudioContext();
+    const analyzer = new AnalyserNode(context, {
+      smoothingTimeConstant: 1,
+      fftSize: 2048,
+    });
+    const oscPlayer = new OscPlayer({ context, analyzer });
+    initOscillatorWithOscilloscope({
+      player: oscPlayer,
+      selection,
+    });
   });
 
   document.querySelectorAll("[data-piano]").forEach(initPiano);

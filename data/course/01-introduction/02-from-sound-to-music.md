@@ -38,11 +38,11 @@ There are sounds that can be well described with a single number though: **pure 
 
 <figure class="oscillator-widget">
   <div class="oscillators">
-    <div data-oscillator data-frequency="440" data-volume="0.5"></div>
-    <div data-oscillator data-frequency="586" data-volume="0.5"></div>
-    <div data-oscillator data-frequency="660" data-volume="0.5"></div>
+    <div class="oscillator" data-frequency="440" data-volume="0.5" data-duration="2"></div>
+    <div class="oscillator" data-frequency="586" data-volume="0.5" data-duration="2"></div>
+    <div class="oscillator" data-frequency="660" data-volume="0.5" data-duration="2"></div>
   </div>
-  <div class="visualizer"></div>
+  <div class="oscilloscope"></div>
   <figcaption>Various pure tones</figcaption>
 </figure>
 
@@ -50,10 +50,10 @@ Now listen to the following two pure tones:
 
 <figure class="oscillator-widget">
   <div class="oscillators">
-    <div data-oscillator data-frequency="440" data-volume="0.5"></div>
-    <div data-oscillator data-frequency="880" data-volume="0.5"></div>
+    <div class="oscillator" data-frequency="440" data-volume="0.5" data-duration="2"></div>
+    <div class="oscillator" data-frequency="880" data-volume="0.5" data-duration="2"></div>
   </div>
-  <div class="visualizer"></div>
+  <div class="oscilloscope"></div>
   <figcaption>Two pure tones, one octave apart</figcaption>
 </figure>
 
